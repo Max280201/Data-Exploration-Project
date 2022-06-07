@@ -1,314 +1,34 @@
 ,div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Season,PredictedResult
-9284,E0,11/8/2017,Arsenal,Leicester,4,3,H,2.0,2.0,D,2017-18,H
-9285,E0,12/8/2017,Brighton,Man City,0,2,A,0.0,0.0,D,2017-18,A
-9286,E0,12/8/2017,Chelsea,Burnley,2,3,A,0.0,3.0,A,2017-18,H
-9287,E0,12/8/2017,Crystal Palace,Huddersfield,0,3,A,0.0,2.0,A,2017-18,A
-9288,E0,12/8/2017,Everton,Stoke,1,0,H,1.0,0.0,H,2017-18,H
-9289,E0,12/8/2017,Southampton,Swansea,0,0,D,0.0,0.0,D,2017-18,H
-9290,E0,12/8/2017,Watford,Liverpool,3,3,D,2.0,1.0,H,2017-18,H
-9291,E0,12/8/2017,West Brom,Bournemouth,1,0,H,1.0,0.0,H,2017-18,A
-9292,E0,13/08/17,Man United,West Ham,4,0,H,1.0,0.0,H,2017-18,H
-9293,E0,13/08/17,Newcastle,Tottenham,0,2,A,0.0,0.0,D,2017-18,A
-9294,E0,19/08/17,Bournemouth,Watford,0,2,A,0.0,0.0,D,2017-18,D
-9295,E0,19/08/17,Burnley,West Brom,0,1,A,0.0,0.0,D,2017-18,D
-9296,E0,19/08/17,Leicester,Brighton,2,0,H,1.0,0.0,H,2017-18,H
-9297,E0,19/08/17,Liverpool,Crystal Palace,1,0,H,0.0,0.0,D,2017-18,D
-9298,E0,19/08/17,Southampton,West Ham,3,2,H,2.0,1.0,H,2017-18,H
-9299,E0,19/08/17,Stoke,Arsenal,1,0,H,0.0,0.0,D,2017-18,H
-9300,E0,19/08/17,Swansea,Man United,0,4,A,0.0,1.0,A,2017-18,A
-9301,E0,20/08/17,Huddersfield,Newcastle,1,0,H,0.0,0.0,D,2017-18,H
-9302,E0,20/08/17,Tottenham,Chelsea,1,2,A,0.0,1.0,A,2017-18,D
-9303,E0,21/08/17,Man City,Everton,1,1,D,0.0,1.0,A,2017-18,H
-9304,E0,26/08/17,Bournemouth,Man City,1,2,A,1.0,1.0,D,2017-18,A
-9305,E0,26/08/17,Crystal Palace,Swansea,0,2,A,0.0,1.0,A,2017-18,A
-9306,E0,26/08/17,Huddersfield,Southampton,0,0,D,0.0,0.0,D,2017-18,H
-9307,E0,26/08/17,Man United,Leicester,2,0,H,0.0,0.0,D,2017-18,H
-9308,E0,26/08/17,Newcastle,West Ham,3,0,H,1.0,0.0,H,2017-18,H
-9309,E0,26/08/17,Watford,Brighton,0,0,D,0.0,0.0,D,2017-18,H
-9310,E0,27/08/17,Chelsea,Everton,2,0,H,2.0,0.0,H,2017-18,H
-9311,E0,27/08/17,Liverpool,Arsenal,4,0,H,2.0,0.0,H,2017-18,H
-9312,E0,27/08/17,Tottenham,Burnley,1,1,D,0.0,0.0,D,2017-18,D
-9313,E0,27/08/17,West Brom,Stoke,1,1,D,0.0,0.0,D,2017-18,A
-9314,E0,9/9/2017,Arsenal,Bournemouth,3,0,H,2.0,0.0,H,2017-18,H
-9315,E0,9/9/2017,Brighton,West Brom,3,1,H,1.0,0.0,H,2017-18,H
-9316,E0,9/9/2017,Everton,Tottenham,0,3,A,0.0,2.0,A,2017-18,A
-9317,E0,9/9/2017,Leicester,Chelsea,1,2,A,0.0,1.0,A,2017-18,A
-9318,E0,9/9/2017,Man City,Liverpool,5,0,H,2.0,0.0,H,2017-18,H
-9319,E0,9/9/2017,Southampton,Watford,0,2,A,0.0,1.0,A,2017-18,A
-9320,E0,9/9/2017,Stoke,Man United,2,2,D,1.0,1.0,D,2017-18,D
-9321,E0,10/9/2017,Burnley,Crystal Palace,1,0,H,1.0,0.0,H,2017-18,H
-9322,E0,10/9/2017,Swansea,Newcastle,0,1,A,0.0,0.0,D,2017-18,H
-9323,E0,11/9/2017,West Ham,Huddersfield,2,0,H,0.0,0.0,D,2017-18,H
-9324,E0,15/09/17,Bournemouth,Brighton,2,1,H,0.0,0.0,D,2017-18,H
-9325,E0,16/09/17,Crystal Palace,Southampton,0,1,A,0.0,1.0,A,2017-18,H
-9326,E0,16/09/17,Huddersfield,Leicester,1,1,D,0.0,0.0,D,2017-18,D
-9327,E0,16/09/17,Liverpool,Burnley,1,1,D,1.0,1.0,D,2017-18,H
-9328,E0,16/09/17,Newcastle,Stoke,2,1,H,1.0,0.0,H,2017-18,H
-9329,E0,16/09/17,Tottenham,Swansea,0,0,D,0.0,0.0,D,2017-18,H
-9330,E0,16/09/17,Watford,Man City,0,6,A,0.0,3.0,A,2017-18,A
-9331,E0,16/09/17,West Brom,West Ham,0,0,D,0.0,0.0,D,2017-18,A
-9332,E0,17/09/17,Chelsea,Arsenal,0,0,D,0.0,0.0,D,2017-18,H
-9333,E0,17/09/17,Man United,Everton,4,0,H,1.0,0.0,H,2017-18,H
-9334,E0,23/09/17,Burnley,Huddersfield,0,0,D,0.0,0.0,D,2017-18,D
-9335,E0,23/09/17,Everton,Bournemouth,2,1,H,0.0,0.0,D,2017-18,H
-9336,E0,23/09/17,Leicester,Liverpool,2,3,A,1.0,2.0,A,2017-18,H
-9337,E0,23/09/17,Man City,Crystal Palace,5,0,H,1.0,0.0,H,2017-18,H
-9338,E0,23/09/17,Southampton,Man United,0,1,A,0.0,1.0,A,2017-18,D
-9339,E0,23/09/17,Stoke,Chelsea,0,4,A,0.0,2.0,A,2017-18,A
-9340,E0,23/09/17,Swansea,Watford,1,2,A,0.0,1.0,A,2017-18,A
-9341,E0,23/09/17,West Ham,Tottenham,2,3,A,0.0,2.0,A,2017-18,H
-9342,E0,24/09/17,Brighton,Newcastle,1,0,H,0.0,0.0,D,2017-18,H
-9343,E0,25/09/17,Arsenal,West Brom,2,0,H,1.0,0.0,H,2017-18,H
-9344,E0,30/09/17,Bournemouth,Leicester,0,0,D,0.0,0.0,D,2017-18,D
-9345,E0,30/09/17,Chelsea,Man City,0,1,A,0.0,0.0,D,2017-18,D
-9346,E0,30/09/17,Huddersfield,Tottenham,0,4,A,0.0,3.0,A,2017-18,A
-9347,E0,30/09/17,Man United,Crystal Palace,4,0,H,2.0,0.0,H,2017-18,H
-9348,E0,30/09/17,Stoke,Southampton,2,1,H,1.0,0.0,H,2017-18,A
-9349,E0,30/09/17,West Brom,Watford,2,2,D,2.0,1.0,H,2017-18,H
-9350,E0,30/09/17,West Ham,Swansea,1,0,H,0.0,0.0,D,2017-18,H
-9351,E0,1/10/2017,Arsenal,Brighton,2,0,H,1.0,0.0,H,2017-18,H
-9352,E0,1/10/2017,Everton,Burnley,0,1,A,0.0,1.0,A,2017-18,H
-9353,E0,1/10/2017,Newcastle,Liverpool,1,1,D,1.0,1.0,D,2017-18,D
-9354,E0,14/10/17,Burnley,West Ham,1,1,D,0.0,1.0,A,2017-18,A
-9355,E0,14/10/17,Crystal Palace,Chelsea,2,1,H,2.0,1.0,H,2017-18,A
-9356,E0,14/10/17,Liverpool,Man United,0,0,D,0.0,0.0,D,2017-18,D
-9357,E0,14/10/17,Man City,Stoke,7,2,H,3.0,1.0,H,2017-18,H
-9358,E0,14/10/17,Swansea,Huddersfield,2,0,H,1.0,0.0,H,2017-18,H
-9359,E0,14/10/17,Tottenham,Bournemouth,1,0,H,0.0,0.0,D,2017-18,H
-9360,E0,14/10/17,Watford,Arsenal,2,1,H,0.0,1.0,A,2017-18,A
-9361,E0,15/10/17,Brighton,Everton,1,1,D,0.0,0.0,D,2017-18,D
-9362,E0,15/10/17,Southampton,Newcastle,2,2,D,0.0,1.0,A,2017-18,H
-9363,E0,16/10/17,Leicester,West Brom,1,1,D,0.0,0.0,D,2017-18,A
-9364,E0,20/10/17,West Ham,Brighton,0,3,A,0.0,2.0,A,2017-18,A
-9365,E0,21/10/17,Chelsea,Watford,4,2,H,1.0,1.0,D,2017-18,H
-9366,E0,21/10/17,Huddersfield,Man United,2,1,H,2.0,0.0,H,2017-18,H
-9367,E0,21/10/17,Man City,Burnley,3,0,H,1.0,0.0,H,2017-18,H
-9368,E0,21/10/17,Newcastle,Crystal Palace,1,0,H,0.0,0.0,D,2017-18,H
-9369,E0,21/10/17,Southampton,West Brom,1,0,H,0.0,0.0,D,2017-18,H
-9370,E0,21/10/17,Stoke,Bournemouth,1,2,A,0.0,2.0,A,2017-18,A
-9371,E0,21/10/17,Swansea,Leicester,1,2,A,0.0,1.0,A,2017-18,H
-9372,E0,22/10/17,Everton,Arsenal,2,5,A,1.0,1.0,D,2017-18,A
-9373,E0,22/10/17,Tottenham,Liverpool,4,1,H,3.0,1.0,H,2017-18,A
-9374,E0,28/10/17,Arsenal,Swansea,2,1,H,0.0,1.0,A,2017-18,A
-9375,E0,28/10/17,Bournemouth,Chelsea,0,1,A,0.0,0.0,D,2017-18,A
-9376,E0,28/10/17,Crystal Palace,West Ham,2,2,D,0.0,2.0,A,2017-18,H
-9377,E0,28/10/17,Liverpool,Huddersfield,3,0,H,0.0,0.0,D,2017-18,H
-9378,E0,28/10/17,Man United,Tottenham,1,0,H,0.0,0.0,D,2017-18,H
-9379,E0,28/10/17,Watford,Stoke,0,1,A,0.0,1.0,A,2017-18,A
-9380,E0,28/10/17,West Brom,Man City,2,3,A,1.0,2.0,A,2017-18,A
-9381,E0,29/10/17,Brighton,Southampton,1,1,D,0.0,1.0,A,2017-18,H
-9382,E0,29/10/17,Leicester,Everton,2,0,H,2.0,0.0,H,2017-18,D
-9383,E0,30/10/17,Burnley,Newcastle,1,0,H,0.0,0.0,D,2017-18,H
-9384,E0,4/11/2017,Huddersfield,West Brom,1,0,H,1.0,0.0,H,2017-18,H
-9385,E0,4/11/2017,Newcastle,Bournemouth,0,1,A,0.0,0.0,D,2017-18,A
-9386,E0,4/11/2017,Southampton,Burnley,0,1,A,0.0,0.0,D,2017-18,H
-9387,E0,4/11/2017,Stoke,Leicester,2,2,D,1.0,1.0,D,2017-18,H
-9388,E0,4/11/2017,Swansea,Brighton,0,1,A,0.0,1.0,A,2017-18,A
-9389,E0,4/11/2017,West Ham,Liverpool,1,4,A,0.0,2.0,A,2017-18,A
-9390,E0,5/11/2017,Chelsea,Man United,1,0,H,0.0,0.0,D,2017-18,H
-9391,E0,5/11/2017,Everton,Watford,3,2,H,0.0,0.0,D,2017-18,H
-9392,E0,5/11/2017,Man City,Arsenal,3,1,H,1.0,0.0,H,2017-18,D
-9393,E0,5/11/2017,Tottenham,Crystal Palace,1,0,H,0.0,0.0,D,2017-18,H
-9394,E0,18/11/17,Arsenal,Tottenham,2,0,H,2.0,0.0,H,2017-18,H
-9395,E0,18/11/17,Bournemouth,Huddersfield,4,0,H,2.0,0.0,H,2017-18,H
-9396,E0,18/11/17,Burnley,Swansea,2,0,H,2.0,0.0,H,2017-18,D
-9397,E0,18/11/17,Crystal Palace,Everton,2,2,D,2.0,2.0,D,2017-18,A
-9398,E0,18/11/17,Leicester,Man City,0,2,A,0.0,1.0,A,2017-18,D
-9399,E0,18/11/17,Liverpool,Southampton,3,0,H,2.0,0.0,H,2017-18,H
-9400,E0,18/11/17,Man United,Newcastle,4,1,H,2.0,1.0,H,2017-18,H
-9401,E0,18/11/17,West Brom,Chelsea,0,4,A,0.0,3.0,A,2017-18,D
-9402,E0,19/11/17,Watford,West Ham,2,0,H,1.0,0.0,H,2017-18,H
-9403,E0,20/11/17,Brighton,Stoke,2,2,D,1.0,2.0,A,2017-18,D
-9404,E0,24/11/17,West Ham,Leicester,1,1,D,1.0,1.0,D,2017-18,A
-9405,E0,25/11/17,Crystal Palace,Stoke,2,1,H,0.0,0.0,D,2017-18,H
-9406,E0,25/11/17,Liverpool,Chelsea,1,1,D,0.0,0.0,D,2017-18,D
-9407,E0,25/11/17,Man United,Brighton,1,0,H,0.0,0.0,D,2017-18,H
-9408,E0,25/11/17,Newcastle,Watford,0,3,A,0.0,2.0,A,2017-18,A
-9409,E0,25/11/17,Swansea,Bournemouth,0,0,D,0.0,0.0,D,2017-18,A
-9410,E0,25/11/17,Tottenham,West Brom,1,1,D,0.0,1.0,A,2017-18,H
-9411,E0,26/11/17,Burnley,Arsenal,0,1,A,0.0,0.0,D,2017-18,A
-9412,E0,26/11/17,Huddersfield,Man City,1,2,A,1.0,0.0,H,2017-18,A
-9413,E0,26/11/17,Southampton,Everton,4,1,H,1.0,1.0,D,2017-18,H
-9414,E0,28/11/17,Brighton,Crystal Palace,0,0,D,0.0,0.0,D,2017-18,A
-9415,E0,28/11/17,Leicester,Tottenham,2,1,H,2.0,0.0,H,2017-18,A
-9416,E0,28/11/17,Watford,Man United,2,4,A,0.0,3.0,A,2017-18,A
-9417,E0,28/11/17,West Brom,Newcastle,2,2,D,1.0,0.0,H,2017-18,A
-9418,E0,29/11/17,Arsenal,Huddersfield,5,0,H,1.0,0.0,H,2017-18,H
-9419,E0,29/11/17,Bournemouth,Burnley,1,2,A,0.0,1.0,A,2017-18,H
-9420,E0,29/11/17,Chelsea,Swansea,1,0,H,0.0,0.0,D,2017-18,H
-9421,E0,29/11/17,Everton,West Ham,4,0,H,2.0,0.0,H,2017-18,H
-9422,E0,29/11/17,Man City,Southampton,2,1,H,0.0,0.0,D,2017-18,H
-9423,E0,29/11/17,Stoke,Liverpool,0,3,A,0.0,1.0,A,2017-18,H
-9424,E0,2/12/2017,Arsenal,Man United,1,3,A,0.0,2.0,A,2017-18,H
-9425,E0,2/12/2017,Brighton,Liverpool,1,5,A,0.0,2.0,A,2017-18,A
-9426,E0,2/12/2017,Chelsea,Newcastle,3,1,H,2.0,1.0,H,2017-18,H
-9427,E0,2/12/2017,Everton,Huddersfield,2,0,H,0.0,0.0,D,2017-18,H
-9428,E0,2/12/2017,Leicester,Burnley,1,0,H,1.0,0.0,H,2017-18,H
-9429,E0,2/12/2017,Stoke,Swansea,2,1,H,2.0,1.0,H,2017-18,H
-9430,E0,2/12/2017,Watford,Tottenham,1,1,D,1.0,1.0,D,2017-18,A
-9431,E0,2/12/2017,West Brom,Crystal Palace,0,0,D,0.0,0.0,D,2017-18,H
-9432,E0,3/12/2017,Bournemouth,Southampton,1,1,D,1.0,0.0,H,2017-18,A
-9433,E0,3/12/2017,Man City,West Ham,2,1,H,0.0,1.0,A,2017-18,H
-9434,E0,9/12/2017,Burnley,Watford,1,0,H,1.0,0.0,H,2017-18,H
-9435,E0,9/12/2017,Crystal Palace,Bournemouth,2,2,D,2.0,2.0,D,2017-18,D
-9436,E0,9/12/2017,Huddersfield,Brighton,2,0,H,2.0,0.0,H,2017-18,H
-9437,E0,9/12/2017,Newcastle,Leicester,2,3,A,1.0,1.0,D,2017-18,A
-9438,E0,9/12/2017,Swansea,West Brom,1,0,H,0.0,0.0,D,2017-18,H
-9439,E0,9/12/2017,Tottenham,Stoke,5,1,H,1.0,0.0,H,2017-18,H
-9440,E0,9/12/2017,West Ham,Chelsea,1,0,H,1.0,0.0,H,2017-18,H
-9441,E0,10/12/2017,Liverpool,Everton,1,1,D,1.0,0.0,H,2017-18,H
-9442,E0,10/12/2017,Man United,Man City,1,2,A,1.0,1.0,D,2017-18,A
-9443,E0,10/12/2017,Southampton,Arsenal,1,1,D,1.0,0.0,H,2017-18,D
-9444,E0,12/12/2017,Burnley,Stoke,1,0,H,0.0,0.0,D,2017-18,D
-9445,E0,12/12/2017,Crystal Palace,Watford,2,1,H,0.0,1.0,A,2017-18,D
-9446,E0,12/12/2017,Huddersfield,Chelsea,1,3,A,0.0,2.0,A,2017-18,A
-9447,E0,13/12/17,Liverpool,West Brom,0,0,D,0.0,0.0,D,2017-18,A
-9448,E0,13/12/17,Man United,Bournemouth,1,0,H,1.0,0.0,H,2017-18,H
-9449,E0,13/12/17,Newcastle,Everton,0,1,A,0.0,1.0,A,2017-18,D
-9450,E0,13/12/17,Southampton,Leicester,1,4,A,0.0,3.0,A,2017-18,H
-9451,E0,13/12/17,Swansea,Man City,0,4,A,0.0,2.0,A,2017-18,A
-9452,E0,13/12/17,Tottenham,Brighton,2,0,H,1.0,0.0,H,2017-18,H
-9453,E0,13/12/17,West Ham,Arsenal,0,0,D,0.0,0.0,D,2017-18,A
-9454,E0,16/12/17,Arsenal,Newcastle,1,0,H,1.0,0.0,H,2017-18,H
-9455,E0,16/12/17,Brighton,Burnley,0,0,D,0.0,0.0,D,2017-18,H
-9456,E0,16/12/17,Chelsea,Southampton,1,0,H,1.0,0.0,H,2017-18,H
-9457,E0,16/12/17,Leicester,Crystal Palace,0,3,A,0.0,2.0,A,2017-18,D
-9458,E0,16/12/17,Man City,Tottenham,4,1,H,1.0,0.0,H,2017-18,H
-9459,E0,16/12/17,Stoke,West Ham,0,3,A,0.0,1.0,A,2017-18,H
-9460,E0,16/12/17,Watford,Huddersfield,1,4,A,0.0,2.0,A,2017-18,A
-9461,E0,17/12/17,Bournemouth,Liverpool,0,4,A,0.0,3.0,A,2017-18,A
-9462,E0,17/12/17,West Brom,Man United,1,2,A,0.0,2.0,A,2017-18,A
-9463,E0,18/12/17,Everton,Swansea,3,1,H,1.0,1.0,D,2017-18,H
-9464,E0,22/12/17,Arsenal,Liverpool,3,3,D,0.0,1.0,A,2017-18,D
-9465,E0,23/12/17,Brighton,Watford,1,0,H,0.0,0.0,D,2017-18,H
-9466,E0,23/12/17,Burnley,Tottenham,0,3,A,0.0,1.0,A,2017-18,A
-9467,E0,23/12/17,Everton,Chelsea,0,0,D,0.0,0.0,D,2017-18,A
-9468,E0,23/12/17,Leicester,Man United,2,2,D,1.0,1.0,D,2017-18,D
-9469,E0,23/12/17,Man City,Bournemouth,4,0,H,1.0,0.0,H,2017-18,H
-9470,E0,23/12/17,Southampton,Huddersfield,1,1,D,1.0,0.0,H,2017-18,A
-9471,E0,23/12/17,Stoke,West Brom,3,1,H,2.0,0.0,H,2017-18,H
-9472,E0,23/12/17,Swansea,Crystal Palace,1,1,D,0.0,0.0,D,2017-18,H
-9473,E0,23/12/17,West Ham,Newcastle,2,3,A,1.0,1.0,D,2017-18,A
-9474,E0,26/12/17,Bournemouth,West Ham,3,3,D,1.0,1.0,D,2017-18,H
-9475,E0,26/12/17,Chelsea,Brighton,2,0,H,0.0,0.0,D,2017-18,H
-9476,E0,26/12/17,Huddersfield,Stoke,1,1,D,1.0,0.0,H,2017-18,H
-9477,E0,26/12/17,Liverpool,Swansea,5,0,H,1.0,0.0,H,2017-18,H
-9478,E0,26/12/17,Man United,Burnley,2,2,D,0.0,2.0,A,2017-18,D
-9479,E0,26/12/17,Tottenham,Southampton,5,2,H,2.0,0.0,H,2017-18,H
-9480,E0,26/12/17,Watford,Leicester,2,1,H,1.0,1.0,D,2017-18,D
-9481,E0,26/12/17,West Brom,Everton,0,0,D,0.0,0.0,D,2017-18,A
-9482,E0,27/12/17,Newcastle,Man City,0,1,A,0.0,1.0,A,2017-18,A
-9483,E0,28/12/17,Crystal Palace,Arsenal,2,3,A,0.0,1.0,A,2017-18,A
-9484,E0,30/12/17,Bournemouth,Everton,2,1,H,1.0,0.0,H,2017-18,H
-9485,E0,30/12/17,Chelsea,Stoke,5,0,H,3.0,0.0,H,2017-18,H
-9486,E0,30/12/17,Huddersfield,Burnley,0,0,D,0.0,0.0,D,2017-18,H
-9487,E0,30/12/17,Liverpool,Leicester,2,1,H,0.0,1.0,A,2017-18,H
-9488,E0,30/12/17,Man United,Southampton,0,0,D,0.0,0.0,D,2017-18,A
-9489,E0,30/12/17,Newcastle,Brighton,0,0,D,0.0,0.0,D,2017-18,H
-9490,E0,30/12/17,Watford,Swansea,1,2,A,1.0,0.0,H,2017-18,H
-9491,E0,31/12/17,Crystal Palace,Man City,0,0,D,0.0,0.0,D,2017-18,A
-9492,E0,31/12/17,West Brom,Arsenal,1,1,D,0.0,0.0,D,2017-18,D
-9493,E0,1/1/2018,Brighton,Bournemouth,2,2,D,1.0,1.0,D,2017-18,H
-9494,E0,1/1/2018,Burnley,Liverpool,1,2,A,0.0,0.0,D,2017-18,A
-9495,E0,1/1/2018,Everton,Man United,0,2,A,0.0,0.0,D,2017-18,D
-9496,E0,1/1/2018,Leicester,Huddersfield,3,0,H,0.0,0.0,D,2017-18,H
-9497,E0,1/1/2018,Stoke,Newcastle,0,1,A,0.0,0.0,D,2017-18,H
-9498,E0,2/1/2018,Man City,Watford,3,1,H,2.0,0.0,H,2017-18,H
-9499,E0,2/1/2018,Southampton,Crystal Palace,1,2,A,1.0,0.0,H,2017-18,H
-9500,E0,2/1/2018,Swansea,Tottenham,0,2,A,0.0,1.0,A,2017-18,A
-9501,E0,2/1/2018,West Ham,West Brom,2,1,H,0.0,1.0,A,2017-18,H
-9502,E0,3/1/2018,Arsenal,Chelsea,2,2,D,0.0,0.0,D,2017-18,H
-9503,E0,4/1/2018,Tottenham,West Ham,1,1,D,0.0,0.0,D,2017-18,D
-9504,E0,13/01/18,Chelsea,Leicester,0,0,D,0.0,0.0,D,2017-18,H
-9505,E0,13/01/18,Crystal Palace,Burnley,1,0,H,1.0,0.0,H,2017-18,H
-9506,E0,13/01/18,Huddersfield,West Ham,1,4,A,1.0,1.0,D,2017-18,A
-9507,E0,13/01/18,Newcastle,Swansea,1,1,D,0.0,0.0,D,2017-18,D
-9508,E0,13/01/18,Tottenham,Everton,4,0,H,1.0,0.0,H,2017-18,H
-9509,E0,13/01/18,Watford,Southampton,2,2,D,0.0,2.0,A,2017-18,A
-9510,E0,13/01/18,West Brom,Brighton,2,0,H,1.0,0.0,H,2017-18,H
-9511,E0,14/01/18,Bournemouth,Arsenal,2,1,H,0.0,0.0,D,2017-18,A
-9512,E0,14/01/18,Liverpool,Man City,4,3,H,1.0,1.0,D,2017-18,H
-9513,E0,15/01/18,Man United,Stoke,3,0,H,2.0,0.0,H,2017-18,H
-9514,E0,20/01/18,Arsenal,Crystal Palace,4,1,H,4.0,0.0,H,2017-18,H
-9515,E0,20/01/18,Brighton,Chelsea,0,4,A,0.0,2.0,A,2017-18,A
-9516,E0,20/01/18,Burnley,Man United,0,1,A,0.0,0.0,D,2017-18,A
-9517,E0,20/01/18,Everton,West Brom,1,1,D,0.0,1.0,A,2017-18,H
-9518,E0,20/01/18,Leicester,Watford,2,0,H,1.0,0.0,H,2017-18,H
-9519,E0,20/01/18,Man City,Newcastle,3,1,H,1.0,0.0,H,2017-18,H
-9520,E0,20/01/18,Stoke,Huddersfield,2,0,H,0.0,0.0,D,2017-18,H
-9521,E0,20/01/18,West Ham,Bournemouth,1,1,D,0.0,0.0,D,2017-18,A
-9522,E0,21/01/18,Southampton,Tottenham,1,1,D,1.0,1.0,D,2017-18,A
-9523,E0,22/01/18,Swansea,Liverpool,1,0,H,1.0,0.0,H,2017-18,H
-9524,E0,30/01/18,Huddersfield,Liverpool,0,3,A,0.0,2.0,A,2017-18,A
-9525,E0,30/01/18,Swansea,Arsenal,3,1,H,1.0,1.0,D,2017-18,A
-9526,E0,30/01/18,West Ham,Crystal Palace,1,1,D,1.0,1.0,D,2017-18,D
-9527,E0,31/01/18,Chelsea,Bournemouth,0,3,A,0.0,0.0,D,2017-18,H
-9528,E0,31/01/18,Everton,Leicester,2,1,H,2.0,0.0,H,2017-18,A
-9529,E0,31/01/18,Man City,West Brom,3,0,H,1.0,0.0,H,2017-18,H
-9530,E0,31/01/18,Newcastle,Burnley,1,1,D,0.0,0.0,D,2017-18,D
-9531,E0,31/01/18,Southampton,Brighton,1,1,D,0.0,1.0,A,2017-18,H
-9532,E0,31/01/18,Stoke,Watford,0,0,D,0.0,0.0,D,2017-18,H
-9533,E0,31/01/18,Tottenham,Man United,2,0,H,2.0,0.0,H,2017-18,H
-9534,E0,3/2/2018,Arsenal,Everton,5,1,H,4.0,0.0,H,2017-18,H
-9535,E0,3/2/2018,Bournemouth,Stoke,2,1,H,0.0,1.0,A,2017-18,A
-9536,E0,3/2/2018,Brighton,West Ham,3,1,H,1.0,1.0,D,2017-18,H
-9537,E0,3/2/2018,Burnley,Man City,1,1,D,0.0,1.0,A,2017-18,A
-9538,E0,3/2/2018,Leicester,Swansea,1,1,D,1.0,0.0,H,2017-18,H
-9539,E0,3/2/2018,Man United,Huddersfield,2,0,H,0.0,0.0,D,2017-18,H
-9540,E0,3/2/2018,West Brom,Southampton,2,3,A,1.0,2.0,A,2017-18,A
-9541,E0,4/2/2018,Crystal Palace,Newcastle,1,1,D,0.0,1.0,A,2017-18,D
-9542,E0,4/2/2018,Liverpool,Tottenham,2,2,D,1.0,0.0,H,2017-18,D
-9543,E0,5/2/2018,Watford,Chelsea,4,1,H,1.0,0.0,H,2017-18,H
-9544,E0,10/2/2018,Everton,Crystal Palace,3,1,H,0.0,0.0,D,2017-18,A
-9545,E0,10/2/2018,Man City,Leicester,5,1,H,1.0,1.0,D,2017-18,H
-9546,E0,10/2/2018,Stoke,Brighton,1,1,D,0.0,1.0,A,2017-18,D
-9547,E0,10/2/2018,Swansea,Burnley,1,0,H,0.0,0.0,D,2017-18,H
-9548,E0,10/2/2018,Tottenham,Arsenal,1,0,H,0.0,0.0,D,2017-18,D
-9549,E0,10/2/2018,West Ham,Watford,2,0,H,1.0,0.0,H,2017-18,H
-9550,E0,11/2/2018,Huddersfield,Bournemouth,4,1,H,2.0,1.0,H,2017-18,H
-9551,E0,11/2/2018,Newcastle,Man United,1,0,H,0.0,0.0,D,2017-18,D
-9552,E0,11/2/2018,Southampton,Liverpool,0,2,A,0.0,2.0,A,2017-18,D
-9553,E0,12/2/2018,Chelsea,West Brom,3,0,H,1.0,0.0,H,2017-18,H
-9554,E0,24/02/18,Bournemouth,Newcastle,2,2,D,0.0,2.0,A,2017-18,D
-9555,E0,24/02/18,Brighton,Swansea,4,1,H,1.0,0.0,H,2017-18,H
-9556,E0,24/02/18,Burnley,Southampton,1,1,D,0.0,0.0,D,2017-18,H
-9557,E0,24/02/18,Leicester,Stoke,1,1,D,0.0,1.0,A,2017-18,H
-9558,E0,24/02/18,Liverpool,West Ham,4,1,H,1.0,0.0,H,2017-18,H
-9559,E0,24/02/18,Watford,Everton,1,0,H,0.0,0.0,D,2017-18,D
-9560,E0,24/02/18,West Brom,Huddersfield,1,2,A,0.0,0.0,D,2017-18,A
-9561,E0,25/02/18,Crystal Palace,Tottenham,0,1,A,0.0,0.0,D,2017-18,A
-9562,E0,25/02/18,Man United,Chelsea,2,1,H,1.0,1.0,D,2017-18,H
-9563,E0,1/3/2018,Arsenal,Man City,0,3,A,0.0,3.0,A,2017-18,A
-9564,E0,3/3/2018,Burnley,Everton,2,1,H,0.0,1.0,A,2017-18,D
+9564,E0,3/3/2018,Burnley,Everton,2,1,H,0.0,1.0,A,2017-18,A
 9565,E0,3/3/2018,Leicester,Bournemouth,1,1,D,0.0,1.0,A,2017-18,D
 9566,E0,3/3/2018,Liverpool,Newcastle,2,0,H,1.0,0.0,H,2017-18,H
-9567,E0,3/3/2018,Southampton,Stoke,0,0,D,0.0,0.0,D,2017-18,D
+9567,E0,3/3/2018,Southampton,Stoke,0,0,D,0.0,0.0,D,2017-18,A
 9568,E0,3/3/2018,Swansea,West Ham,4,1,H,2.0,0.0,H,2017-18,D
 9569,E0,3/3/2018,Tottenham,Huddersfield,2,0,H,1.0,0.0,H,2017-18,H
 9570,E0,3/3/2018,Watford,West Brom,1,0,H,0.0,0.0,D,2017-18,H
-9571,E0,4/3/2018,Brighton,Arsenal,2,1,H,2.0,1.0,H,2017-18,H
+9571,E0,4/3/2018,Brighton,Arsenal,2,1,H,2.0,1.0,H,2017-18,D
 9572,E0,4/3/2018,Man City,Chelsea,1,0,H,0.0,0.0,D,2017-18,H
 9573,E0,5/3/2018,Crystal Palace,Man United,2,3,A,1.0,0.0,H,2017-18,A
-9574,E0,10/3/2018,Chelsea,Crystal Palace,2,1,H,2.0,0.0,H,2017-18,D
+9574,E0,10/3/2018,Chelsea,Crystal Palace,2,1,H,2.0,0.0,H,2017-18,H
 9575,E0,10/3/2018,Everton,Brighton,2,0,H,0.0,0.0,D,2017-18,H
 9576,E0,10/3/2018,Huddersfield,Swansea,0,0,D,0.0,0.0,D,2017-18,A
 9577,E0,10/3/2018,Man United,Liverpool,2,1,H,2.0,0.0,H,2017-18,H
 9578,E0,10/3/2018,Newcastle,Southampton,3,0,H,2.0,0.0,H,2017-18,H
 9579,E0,10/3/2018,West Brom,Leicester,1,4,A,1.0,1.0,D,2017-18,A
-9580,E0,10/3/2018,West Ham,Burnley,0,3,A,0.0,0.0,D,2017-18,A
+9580,E0,10/3/2018,West Ham,Burnley,0,3,A,0.0,0.0,D,2017-18,H
 9581,E0,11/3/2018,Arsenal,Watford,3,0,H,1.0,0.0,H,2017-18,H
 9582,E0,11/3/2018,Bournemouth,Tottenham,1,4,A,1.0,1.0,D,2017-18,A
-9583,E0,12/3/2018,Stoke,Man City,0,2,A,0.0,1.0,A,2017-18,A
+9583,E0,12/3/2018,Stoke,Man City,0,2,A,0.0,1.0,A,2017-18,D
 9584,E0,17/03/18,Bournemouth,West Brom,2,1,H,0.0,0.0,D,2017-18,H
-9585,E0,17/03/18,Huddersfield,Crystal Palace,0,2,A,0.0,1.0,A,2017-18,A
+9585,E0,17/03/18,Huddersfield,Crystal Palace,0,2,A,0.0,1.0,A,2017-18,D
 9586,E0,17/03/18,Liverpool,Watford,5,0,H,2.0,0.0,H,2017-18,H
-9587,E0,17/03/18,Stoke,Everton,1,2,A,0.0,0.0,D,2017-18,A
+9587,E0,17/03/18,Stoke,Everton,1,2,A,0.0,0.0,D,2017-18,D
 9588,E0,31/03/18,Brighton,Leicester,0,2,A,0.0,0.0,D,2017-18,A
-9589,E0,31/03/18,Crystal Palace,Liverpool,1,2,A,1.0,0.0,H,2017-18,D
+9589,E0,31/03/18,Crystal Palace,Liverpool,1,2,A,1.0,0.0,H,2017-18,H
 9590,E0,31/03/18,Everton,Man City,1,3,A,0.0,3.0,A,2017-18,D
 9591,E0,31/03/18,Man United,Swansea,2,0,H,2.0,0.0,H,2017-18,H
-9592,E0,31/03/18,Newcastle,Huddersfield,1,0,H,0.0,0.0,D,2017-18,H
-9593,E0,31/03/18,Watford,Bournemouth,2,2,D,1.0,1.0,D,2017-18,D
+9592,E0,31/03/18,Newcastle,Huddersfield,1,0,H,0.0,0.0,D,2017-18,A
+9593,E0,31/03/18,Watford,Bournemouth,2,2,D,1.0,1.0,D,2017-18,A
 9594,E0,31/03/18,West Brom,Burnley,1,2,A,0.0,1.0,A,2017-18,H
 9595,E0,31/03/18,West Ham,Southampton,3,0,H,3.0,0.0,H,2017-18,H
 9596,E0,1/4/2018,Arsenal,Stoke,3,0,H,0.0,0.0,D,2017-18,H
@@ -317,10 +37,10 @@
 9599,E0,7/4/2018,Brighton,Huddersfield,1,1,D,1.0,1.0,D,2017-18,D
 9600,E0,7/4/2018,Everton,Liverpool,0,0,D,0.0,0.0,D,2017-18,A
 9601,E0,7/4/2018,Leicester,Newcastle,1,2,A,0.0,1.0,A,2017-18,H
-9602,E0,7/4/2018,Man City,Man United,2,3,A,2.0,0.0,H,2017-18,D
+9602,E0,7/4/2018,Man City,Man United,2,3,A,2.0,0.0,H,2017-18,H
 9603,E0,7/4/2018,Stoke,Tottenham,1,2,A,0.0,0.0,D,2017-18,A
 9604,E0,7/4/2018,Watford,Burnley,1,2,A,0.0,0.0,D,2017-18,H
-9605,E0,7/4/2018,West Brom,Swansea,1,1,D,0.0,0.0,D,2017-18,A
+9605,E0,7/4/2018,West Brom,Swansea,1,1,D,0.0,0.0,D,2017-18,H
 9606,E0,8/4/2018,Arsenal,Southampton,3,2,H,2.0,1.0,H,2017-18,H
 9607,E0,8/4/2018,Chelsea,West Ham,1,1,D,1.0,0.0,H,2017-18,H
 9608,E0,14/04/18,Burnley,Leicester,2,1,H,2.0,0.0,H,2017-18,H
@@ -336,46 +56,46 @@
 9618,E0,17/04/18,Brighton,Tottenham,1,1,D,0.0,0.0,D,2017-18,H
 9619,E0,18/04/18,Bournemouth,Man United,0,2,A,0.0,1.0,A,2017-18,A
 9620,E0,19/04/18,Burnley,Chelsea,1,2,A,0.0,1.0,A,2017-18,A
-9621,E0,19/04/18,Leicester,Southampton,0,0,D,0.0,0.0,D,2017-18,A
-9622,E0,21/04/18,Watford,Crystal Palace,0,0,D,0.0,0.0,D,2017-18,D
+9621,E0,19/04/18,Leicester,Southampton,0,0,D,0.0,0.0,D,2017-18,H
+9622,E0,21/04/18,Watford,Crystal Palace,0,0,D,0.0,0.0,D,2017-18,A
 9623,E0,21/04/18,West Brom,Liverpool,2,2,D,0.0,1.0,A,2017-18,H
 9624,E0,22/04/18,Arsenal,West Ham,4,1,H,0.0,0.0,D,2017-18,H
 9625,E0,22/04/18,Man City,Swansea,5,0,H,2.0,0.0,H,2017-18,H
-9626,E0,22/04/18,Stoke,Burnley,1,1,D,1.0,0.0,H,2017-18,D
+9626,E0,22/04/18,Stoke,Burnley,1,1,D,1.0,0.0,H,2017-18,H
 9627,E0,23/04/18,Everton,Newcastle,1,0,H,0.0,0.0,D,2017-18,H
 9628,E0,28/04/18,Burnley,Brighton,0,0,D,0.0,0.0,D,2017-18,H
-9629,E0,28/04/18,Crystal Palace,Leicester,5,0,H,2.0,0.0,H,2017-18,H
-9630,E0,28/04/18,Huddersfield,Everton,0,2,A,0.0,1.0,A,2017-18,A
+9629,E0,28/04/18,Crystal Palace,Leicester,5,0,H,2.0,0.0,H,2017-18,D
+9630,E0,28/04/18,Huddersfield,Everton,0,2,A,0.0,1.0,A,2017-18,H
 9631,E0,28/04/18,Liverpool,Stoke,0,0,D,0.0,0.0,D,2017-18,H
-9632,E0,28/04/18,Newcastle,West Brom,0,1,A,0.0,1.0,A,2017-18,D
+9632,E0,28/04/18,Newcastle,West Brom,0,1,A,0.0,1.0,A,2017-18,H
 9633,E0,28/04/18,Southampton,Bournemouth,2,1,H,1.0,1.0,D,2017-18,H
 9634,E0,28/04/18,Swansea,Chelsea,0,1,A,0.0,1.0,A,2017-18,A
 9635,E0,29/04/18,Man United,Arsenal,2,1,H,1.0,0.0,H,2017-18,H
 9636,E0,29/04/18,West Ham,Man City,1,4,A,1.0,2.0,A,2017-18,A
 9637,E0,30/04/18,Tottenham,Watford,2,0,H,1.0,0.0,H,2017-18,H
-9638,E0,4/5/2018,Brighton,Man United,1,0,H,0.0,0.0,D,2017-18,H
+9638,E0,4/5/2018,Brighton,Man United,1,0,H,0.0,0.0,D,2017-18,D
 9639,E0,5/5/2018,Bournemouth,Swansea,1,0,H,1.0,0.0,H,2017-18,H
 9640,E0,5/5/2018,Everton,Southampton,1,1,D,0.0,0.0,D,2017-18,H
 9641,E0,5/5/2018,Leicester,West Ham,0,2,A,0.0,1.0,A,2017-18,A
-9642,E0,5/5/2018,Stoke,Crystal Palace,1,2,A,1.0,0.0,H,2017-18,A
+9642,E0,5/5/2018,Stoke,Crystal Palace,1,2,A,1.0,0.0,H,2017-18,D
 9643,E0,5/5/2018,Watford,Newcastle,2,1,H,2.0,0.0,H,2017-18,H
 9644,E0,5/5/2018,West Brom,Tottenham,1,0,H,0.0,0.0,D,2017-18,D
 9645,E0,6/5/2018,Arsenal,Burnley,5,0,H,2.0,0.0,H,2017-18,H
-9646,E0,6/5/2018,Chelsea,Liverpool,1,0,H,1.0,0.0,H,2017-18,H
-9647,E0,6/5/2018,Man City,Huddersfield,0,0,D,0.0,0.0,D,2017-18,D
+9646,E0,6/5/2018,Chelsea,Liverpool,1,0,H,1.0,0.0,H,2017-18,D
+9647,E0,6/5/2018,Man City,Huddersfield,0,0,D,0.0,0.0,D,2017-18,H
 9648,E0,8/5/2018,Swansea,Southampton,0,1,A,0.0,0.0,D,2017-18,D
-9649,E0,9/5/2018,Chelsea,Huddersfield,1,1,D,0.0,0.0,D,2017-18,D
+9649,E0,9/5/2018,Chelsea,Huddersfield,1,1,D,0.0,0.0,D,2017-18,H
 9650,E0,9/5/2018,Leicester,Arsenal,3,1,H,1.0,0.0,H,2017-18,A
 9651,E0,9/5/2018,Man City,Brighton,3,1,H,2.0,1.0,H,2017-18,H
 9652,E0,9/5/2018,Tottenham,Newcastle,1,0,H,0.0,0.0,D,2017-18,H
-9653,E0,10/5/2018,West Ham,Man United,0,0,D,0.0,0.0,D,2017-18,D
-9654,E0,13/05/18,Burnley,Bournemouth,1,2,A,1.0,0.0,H,2017-18,A
+9653,E0,10/5/2018,West Ham,Man United,0,0,D,0.0,0.0,D,2017-18,A
+9654,E0,13/05/18,Burnley,Bournemouth,1,2,A,1.0,0.0,H,2017-18,H
 9655,E0,13/05/18,Crystal Palace,West Brom,2,0,H,0.0,0.0,D,2017-18,H
 9656,E0,13/05/18,Huddersfield,Arsenal,0,1,A,0.0,1.0,A,2017-18,A
 9657,E0,13/05/18,Liverpool,Brighton,4,0,H,2.0,0.0,H,2017-18,H
 9658,E0,13/05/18,Man United,Watford,1,0,H,1.0,0.0,H,2017-18,H
 9659,E0,13/05/18,Newcastle,Chelsea,3,0,H,1.0,0.0,H,2017-18,H
-9660,E0,13/05/18,Southampton,Man City,0,1,A,0.0,0.0,D,2017-18,H
-9661,E0,13/05/18,Swansea,Stoke,1,2,A,1.0,2.0,A,2017-18,D
+9660,E0,13/05/18,Southampton,Man City,0,1,A,0.0,0.0,D,2017-18,A
+9661,E0,13/05/18,Swansea,Stoke,1,2,A,1.0,2.0,A,2017-18,H
 9662,E0,13/05/18,Tottenham,Leicester,5,4,H,1.0,2.0,A,2017-18,H
 9663,E0,13/05/18,West Ham,Everton,3,1,H,1.0,0.0,H,2017-18,D
