@@ -1,0 +1,377 @@
+% !TEX root =  master.tex
+\chapter{Anhang: Quellcode}
+
+\section{Quelltext Abbildung 3.4}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Abbildung 3.3}},captionpos=b]
+c.execute("""
+select SC.ZEW_FULL_SID, ZEW_STMT_HASH, TH.ZEW_SQL_DAY, 
+		TH.ZEW_SQL_HOUR, ZEW_SAMPLES_RUNNING
+from "CBR2PHD"."/STCSC/TRD_HIST" TH, "CBR2PHD"."/STCSC/SESSION_C" SC
+where
+TH.CLIENT = SC.CLIENT and
+TH.SESSNO = SC.SESSNO and
+TH.CALWEEK = SC.CALWEEK and
+SC.ZEW_FULL_SID = 'ISP_0120053140_000000000310074187' and
+TH.ZEW_STMT_HASH = '2303d12be02f474318dcd7882cd0ed65'
+order by SC.ZEW_FULL_SID, SC.SESSNO, SC.CALWEEK, SC.SESSDATE, 
+		TH.ZEW_STMT_HASH, TH.ZEW_SQL_DAY, TH.ZEW_SQL_HOUR
+""")
+
+data = c.fetchall()
+df1 = pd.DataFrame(data, columns=[x[0] for x in c.description])
+
+s = df1['ZEW_SQL_DAY'].astype(str).str.zfill(2) + 
+		df1['ZEW_SQL_HOUR'].astype(str).str.zfill(2)
+df1['Date'] = pd.to_datetime(s, errors='ignore', format='%Y%m%d%H')
+df1 = df1.drop(['ZEW_SQL_DAY','ZEW_SQL_HOUR'], axis=1)	
+plt.figure(figsize=(10,10))
+x=df1['Date'][1150:1500]
+y=df1['ZEW_SAMPLES_RUNNING'][1150:1500]
+plt.title('Aktivitaet des SQL-Statements ueber Zeit')
+plt.xlabel('Date')
+plt.ylabel('Sample Aktivitaet')
+x1,x2,y1,y2 = plt.axis()  
+plt.scatter(x,y)
+\end{lstlisting}
+
+
+\section{Quelltext Abbildung 3.6}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Abbildung 3.6}},captionpos=b]
+c.execute("""
+select SC.ZEW_FULL_SID, TH.ZEW_STMT_HASH, TH.ZEW_SQL_DAY, 
+		TH.ZEW_SQL_HOUR, ZEW_SAMPLES_RUNNING
+from "CBR2PHD"."/STCSC/TRD_HIST" TH, "CBR2PHD"."/STCSC/SESSION_C" SC
+where
+TH.CLIENT = SC.CLIENT and
+TH.SESSNO = SC.SESSNO and
+TH.CALWEEK = SC.CALWEEK and
+TH.ZEW_STMT_HASH = '15633d25e45b555d85864aa928f0c92a' and
+SC.ZEW_FULL_SID = 'ISP_0120053140_000000000310074187'
+group by TH.ZEW_SQL_DAY, SC.ZEW_FULL_SID, TH.ZEW_STMT_HASH, 
+		TH.ZEW_SQL_HOUR, ZEW_SAMPLES_RUNNING
+order by ZEW_SQL_DAY
+""")
+
+data = c.fetchall()
+df1 = pd.DataFrame(data, columns=[x[0] for x in c.description])
+
+s = df1['ZEW_SQL_DAY'].astype(str).str.zfill(2) 
+		+ df1['ZEW_SQL_HOUR'].astype(str).str.zfill(2)
+df1['Date'] = pd.to_datetime(s, errors='ignore', format='%Y%m%d%H')
+df1 = df1.drop(['ZEW_SQL_DAY','ZEW_SQL_HOUR'], axis=1)
+
+allsamples = [i for i in df1['ZEW_SAMPLES_RUNNING']]
+allsamplesclean = [i if i == 0 else 1 for i in allsamples]
+plt.figure(figsize=(10,10))
+x=df1['Date']
+y=allsamplesclean
+plt.title('Active samples each day for whole statement')
+plt.xlabel('Date')
+plt.ylabel('Sample activity')
+x1,x2,y1,y2 = plt.axis()  
+plt.ylim(0,1.5)
+plt.scatter(x,y)
+\end{lstlisting}
+
+\section{Quelltext Abbildung 3.8}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Abbildung 3.8}},captionpos=b]
+c.execute("""
+select SC.ZEW_FULL_SID, TH.ZEW_STMT_HASH, TH.ZEW_SQL_DAY, 
+		TH.ZEW_SQL_HOUR, ZEW_SAMPLES_RUNNING
+from "CBR2PHD"."/STCSC/TRD_HIST" TH, "CBR2PHD"."/STCSC/SESSION_C" SC
+where
+TH.CLIENT = SC.CLIENT and
+TH.SESSNO = SC.SESSNO and
+TH.CALWEEK = SC.CALWEEK and
+TH.ZEW_STMT_HASH = '203f26e3c3018684b236ce8bcae9c2df' and
+SC.ZEW_FULL_SID = 'BHP_0020146754_000000000310223639'
+group by TH.ZEW_SQL_DAY, SC.ZEW_FULL_SID, TH.ZEW_STMT_HASH, 
+		TH.ZEW_SQL_HOUR, ZEW_SAMPLES_RUNNING
+order by ZEW_SQL_DAY
+""")
+
+data = c.fetchall()
+df1 = pd.DataFrame(data, columns=[x[0] for x in c.description])
+
+s = df1['ZEW_SQL_DAY'].astype(str).str.zfill(2) 
+		+ df1['ZEW_SQL_HOUR'].astype(str).str.zfill(2)
+df1['Date'] = pd.to_datetime(s, errors='ignore', format='%Y%m%d%H')
+df1 = df1.drop(['ZEW_SQL_DAY','ZEW_SQL_HOUR'], axis=1)
+allsamples = [i for i in df1['ZEW_SAMPLES_RUNNING'][2000:2720]]
+allsamplesclean = [i if i == 0 else 1 for i in allsamples]
+
+plt.figure(figsize=(10,10))
+x=df1['Date'][2000:2720]
+y=allsamplesclean
+plt.title('Active samples each day for whole statement')
+plt.xlabel('Date')
+plt.ylabel('Sample activity')
+x1,x2,y1,y2 = plt.axis()  
+plt.ylim(0,1.5)
+plt.scatter(x,y)
+\end{lstlisting}
+
+\section{Quelltext Abbildung 4.4}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Abbildung 4.4}},captionpos=b]
+c.execute(f"""
+select TH.ZEW_SQL_DAY, TH.ZEW_SQL_HOUR, ZEW_SAMPLES_RUNNING
+from "CBR2PHD"."/STCSC/TRD_HIST" TH, "CBR2PHD"."/STCSC/SESSION_C" SC
+where
+TH.CLIENT = SC.CLIENT and
+TH.SESSNO = SC.SESSNO and
+TH.CALWEEK = SC.CALWEEK and
+SC.ZEW_FULL_SID = 'PW1_0021064241_000000000850453133'
+order by TH.ZEW_SQL_DAY, TH.ZEW_SQL_HOUR
+""")
+
+data = c.fetchall()
+df = pd.DataFrame(data, columns=[x[0] for x in c.description])
+s = df['ZEW_SQL_DAY'].astype(str).str.zfill(2) 
+		+ df['ZEW_SQL_HOUR'].astype(str).str.zfill(2)
+df['Date'] = pd.to_datetime(s, errors='ignore', format='%Y%m%d%H')
+df = df.drop(['ZEW_SQL_DAY','ZEW_SQL_HOUR'], axis=1)
+
+k = 1
+ilist = []
+while k <= len(df) - 1:
+	if df['Date'][k] == df['Date'][k - 1]:
+		df.at[k, 'ZEW_SAMPLES_RUNNING'] = (df['ZEW_SAMPLES_RUNNING'][k] 
+				+ df['ZEW_SAMPLES_RUNNING'][k - 1])
+		ilist.append(k - 1)
+	k += 1
+df = df.drop(ilist)
+df = df.set_index('Date')
+
+result_add = seasonal_decompose(df['ZEW_SAMPLES_RUNNING']
+		, model='additive', period=24)
+
+plt.rcParams.update({'figure.figsize': (10,10)})
+result_add.plot().suptitle(f'Time series Decompose(Hourly)', fontsize=22)
+plt.tight_layout(rect=[0, 0, 1, 1])
+\end{lstlisting}
+
+\section{Quelltext Abbildung 4.5}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Abbildung 4.5}},captionpos=b]
+df = pd.DataFrame(result_add.seasonal)
+df
+plt.plot(df[:672])
+plt.title('Seasonal decompose of f816711c913d152181a1e2d3d3d1dc43 in May')
+plt.show()
+\end{lstlisting}
+
+\section{Quelltext Abbildung 4.6}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Abbildung 4.6}},captionpos=b]
+df = pd.DataFrame(result_add.seasonal)
+df = df[:168]
+
+df['min'] = df.seasonal[(df.seasonal.shift(1) > df.seasonal) 
+		& (df.seasonal.shift(-1) > df.seasonal)]
+df['max'] = df.seasonal[(df.seasonal.shift(1) < df.seasonal) 
+		& (df.seasonal.shift(-1) < df.seasonal)]
+
+plt.scatter(df.index, df['min'], c='r')
+plt.scatter(df.index, df['max'], c='g')
+plt.plot(df.index, df['seasonal'])
+plt.title("Extrempunkte stuendliches Muster")
+plt.show()
+
+extremepoints = df["max"].count() + df["min"].count()
+print("This example has", extremepoints, "extremepoints.")
+
+
+df2 = pd.DataFrame(result_add2.seasonal)
+df2 = df2[:168]
+
+df2['min'] = df2.seasonal[(df2.seasonal.shift(1) > df2.seasonal) 
+		& (df2.seasonal.shift(-1) > df2.seasonal)]
+df2['max'] = df2.seasonal[(df2.seasonal.shift(1) < df2.seasonal) 
+		& (df2.seasonal.shift(-1) < df2.seasonal)]
+
+plt.scatter(df2.index, df2['min'], c='r')
+plt.scatter(df2.index, df2['max'], c='g')
+plt.plot(df2.index, df2['seasonal'])
+plt.title("Extrempunkte woechentliches Muster")
+plt.show()
+
+extremepoints = df2["max"].count() + df2["min"].count()
+print("This example has", extremepoints, "extremepoints.")
+\end{lstlisting}
+
+\section{Quelltext Tabelle 4.1}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Tabelle 4.1}},captionpos=b]
+from sklearn.model_selection import RandomizedSearchCV
+n_estimators = [int(x) for x in np.linspace(start = 200
+		, stop = 2000, num = 10)]
+max_features = ['auto', 'sqrt']
+max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
+max_depth.append(None)
+min_samples_split = [2, 5, 10]
+min_samples_leaf = [1, 2, 4]
+bootstrap = [True, False]
+random_grid = {'n_estimators': n_estimators,
+	'max_features': max_features,
+	'max_depth': max_depth,
+	'min_samples_split': min_samples_split,
+	'min_samples_leaf': min_samples_leaf,
+	'bootstrap': bootstrap}
+print(random_grid)
+
+
+from sklearn.ensemble import RandomForestClassifier
+rf = RandomForestClassifier()
+rf_random = RandomizedSearchCV(estimator = rf, param_distributions 
+		= random_grid, n_iter = 10, cv = 3, 
+		verbose=2, random_state=42, n_jobs = -1)
+rf_random.fit(X_train, y_train)
+
+
+rf_random.best_params_
+\end{lstlisting}
+
+\section{Quelltext Abbildung 4.7}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Abbildung 4.7}},captionpos=b]
+import matplotlib.pyplot as plt
+%matplotlib inline
+plt.style.use('ggplot')
+
+x = ['Base Model', 'Time Series Decompose', 'Random Forest']
+algorithm = [45.56598541068432, 44.93691770867706, 69.52234963725721]
+
+x_pos = [i for i, _ in enumerate(x)]
+
+plt.bar(x_pos, algorithm, color='green')
+plt.xlabel("Algorithmus")
+plt.ylabel("Genauigkeit")
+plt.title("Vergleich der Algorithmen")
+plt.xticks(x_pos, x)
+plt.show()
+\end{lstlisting}
+
+\section{Quelltext TSD-Klassifikation}
+
+\begin{lstlisting}[caption={\texttt{Quelltext TSD-Klassifikation}},captionpos=b]
+for stmthash, sid in zip(topstmtlist1, topstmtlist2):
+	c.execute(f"""
+select TH.ZEW_SQL_DAY, TH.ZEW_SQL_HOUR, ZEW_SAMPLES_RUNNING
+from "CBR2PHD"."/STCSC/TRD_HIST" TH, "CBR2PHD"."/STCSC/SESSION_C" SC
+where
+TH.CLIENT = SC.CLIENT and
+TH.SESSNO = SC.SESSNO and
+TH.CALWEEK = SC.CALWEEK and
+SC.ZEW_FULL_SID = '{sid}' and
+TH.ZEW_STMT_HASH = '{stmthash}'
+order by TH.ZEW_SQL_DAY, TH.ZEW_SQL_HOUR
+""")
+
+	data = c.fetchall()
+	df = pd.DataFrame(data, columns=[x[0] for x in c.description])
+	s = df['ZEW_SQL_DAY'].astype(str).str.zfill(2)
+		+ df['ZEW_SQL_HOUR'].astype(str).str.zfill(2)
+	df['Date'] = pd.to_datetime(s, errors='ignore', format='%Y%m%d%H')
+	df = df.drop(['ZEW_SQL_DAY','ZEW_SQL_HOUR'], axis=1)
+	
+	k = 1
+	ilist = []
+	while k <= len(df2) - 1:
+	if df['Date'][k] == df['Date'][k - 1]:
+	df.at[k, 'ZEW_SAMPLES_RUNNING'] = (df['ZEW_SAMPLES_RUNNING'][k] 
+		+ df['ZEW_SAMPLES_RUNNING'][k - 1])
+	ilist.append(k - 1)
+	k += 1
+	df = df.drop(ilist)
+	df = df.set_index('Date')
+	
+	result_add = seasonal_decompose(df['ZEW_SAMPLES_RUNNING'], 
+		model='additive', period=24)
+	
+	df = pd.DataFrame(result_add.seasonal)
+	
+	
+	df = pd.DataFrame(result_add.seasonal)
+	df = df[:168]
+	
+	df['min'] = df.seasonal[(df.seasonal.shift(1) > df.seasonal) 
+		& (df.seasonal.shift(-1) > df.seasonal)]
+	df['max'] = df.seasonal[(df.seasonal.shift(1) < df.seasonal) 
+		& (df.seasonal.shift(-1) < df.seasonal)]
+	
+	extremepoints = df["max"].count() + df["min"].count()
+	print("This example has", extremepoints, "extremepoints.")
+	
+	predictionclass = dflabeled.loc[(dflabeled['ZEW_FULL_SID'] == sid) 
+		& (dflabeled['ZEW_STMT_HASH'] == stmthash), 'Label']
+	predictionclass = predictionclass.iloc[0]
+	
+	predictiondf = pd.DataFrame()
+		if extremepoints >= 2 and extremepoints <= 4:
+		print(f"{stmthash} is 
+			classified monthly and has 
+				the label {predictionclass}.")
+		print()
+		dflabeled.loc[(dflabeled['ZEW_FULL_SID'] == sid) 
+			& (dflabeled['ZEW_STMT_HASH'] == stmthash), 
+				'Prediction'] = "monthly"
+	if extremepoints >= 5 and extremepoints <= 12:
+		print(f"{stmthash} is 
+			classified weekly and has 
+				the label {predictionclass}.")
+		print()
+		dflabeled.loc[(dflabeled['ZEW_FULL_SID'] == sid) 
+			& (dflabeled['ZEW_STMT_HASH'] == stmthash), 
+				'Prediction'] = "weekly"
+	elif extremepoints >= 13 and extremepoints <= 75:
+		print(f"{stmthash} is 
+			classified daily and has 
+				the label {predictionclass}.")
+		print()
+		dflabeled.loc[(dflabeled['ZEW_FULL_SID'] == sid) 
+			& (dflabeled['ZEW_STMT_HASH'] == stmthash), 
+				'Prediction'] = "daily"
+	elif extremepoints >= 76 and extremepoints <= 85:
+		print(f"{stmthash} is 
+			classified working-hours and has 
+				the label {predictionclass}.")
+		print()
+		dflabeled.loc[(dflabeled['ZEW_FULL_SID'] == sid) 
+			& (dflabeled['ZEW_STMT_HASH'] == stmthash), 
+				'Prediction'] = "working-hours"
+	elif extremepoints >= 86 and extremepoints <= 250:
+		print(f"{stmthash} is 
+			classified hourly and has 
+				the label {predictionclass}.")
+		print()
+		dflabeled.loc[(dflabeled['ZEW_FULL_SID'] == sid) 
+			& (dflabeled['ZEW_STMT_HASH'] == stmthash), 
+				'Prediction'] = "hourly"
+	else:
+		print("No pattern found")
+\end{lstlisting}
+
+\section{Quelltext Random Forest-Klassifikation}
+
+\begin{lstlisting}[caption={\texttt{Quelltext Random Forest-Klassifikation}},captionpos=b]
+def evaluate(model, test_features, test_labels):
+	predictions = model.predict(test_features)
+	errors = abs(predictions - test_labels)
+	mape = 100 * np.mean(errors / test_labels)
+	accuracy = 100 - mape
+	print('Model Performance')
+	print('Average Error: {:0.4f} degrees.'.format(np.mean(errors)))
+	print('Accuracy = {:0.2f}%.'.format(accuracy))
+	
+	return accuracy
+base_model = RandomForestClassifier(n_estimators = 20, random_state = 42)
+base_model.fit(X_train,y_train)
+base_accuracy = evaluate(base_model, X_test, y_test)
+
+best_random = rf_random.best_estimator_
+random_accuracy = evaluate(best_random, X_test, y_test)
+\end{lstlisting}
