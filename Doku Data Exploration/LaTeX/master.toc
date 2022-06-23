@@ -11,7 +11,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Hintergrund und Motivation}{1}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Wirtschaftlicher Use Case}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Business Use Case}{1}{section.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{2}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -27,8 +27,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Fazit}{4}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Kritische Bewertung der Ergebnisse}{4}{section.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Anmerkungen zum Quellcode}{4}{section.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{}{section.4.2}
+\contentsline {chapter}{Anhang}{}{chapter.4}
