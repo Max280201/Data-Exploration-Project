@@ -1,3 +1,57 @@
 % !TEX root =  master.tex
 \chapter{Fazit}
-Abschließend lässt sich feststellen, dass man durch die Optimierung des Neural Networks die höchste Accuracy erreicht. Nach der Random Parameter Search konnten wir die Accuracy erhöhen. Wie bereits erwähnt lag diese final bei 53 Prozent. Mithilfe dieses Modells wurde das Betting bei Wettanbietern simuliert. Leider kann man sehen, dass unser Modell schnell negative Summen erreicht und einiges an Geld verliert. Der Fußball ist wohl doch ein Gebiet mit zu vielen Zufallsvariablen, sodass man keine Genauigkeit erzielen kann, die einen Wettanbieter schlägt. Die Genauigkeit von 53 Prozent ist jedoch für sich genommen recht vielversprechend. Es zeigt, dass sich der Fußball in Ansätzen algorithmisch bestimmen lässt. Für unseren Business Use Case ist dieses Ergebnis natürlich nicht hoch genug und somit muss dieser verworfen werden. Es hat sich gezeigt, dass man schnell Geld verliert bei der Nutzung unseres Modells.
+
+Abschließend lässt sich festellen, dass sich die Accuracy des Neural Networks
+im Verlauf des Projekts Schritt für Schritt durch das optimieren der Datenbasis
+und des Modells selber erhöhen ließ. Die größte Erhöhung dabei kam durch das fokussieren
+auf den direkten Unterschied der Werte der Mannschaften sowie die Random Paramter Search
+des Modells. Final konnte eine 53\% Accuracy erreicht werden.
+
+Wie in der Grafik in Abschnitt drei von Kapitel 3 gezeigt war es möglich mit Hilfe
+des Modells profitable zu wetten. Vergleicht man die Profit Kurve es Modells jedoch
+mit der der Wettanbieter fällt auf, dass diese im Verlauf der Saison Intervalle mit
+höheren Gewinnen aufweisen, ihre Predictions also besser funktionieren. Das lässt sich
+darauf zurück führen, dass das Modell mit maximal 65\% Sicherheit das Ergebnis eines Spiels
+vorhersagt. Die Modelle der Wettanbieter weißen eine durchschnittlich höhere Sicherheit in Bezug auf die
+Ergebnisse der Spiele aus, was dazu führt, dass diese in der Simulation höhere Beträge
+einsetzten können und insgesamt auch mehr wetten eingehen als unser Modell.
+Um also langfristig die Wettanbieter gewinnbringend zu schlagen müsste das Modell
+weiterverbessert werden um eine höhere Accuracy zu erhalten. Mögliche Ansätze hierfür
+sind:
+
+Zusammenfassend lassen sich die Ergebnisse des Projekts folgendermaßen zusamenfassen:
+Das Projekt war erfolgreich. Durch die 53 prozentige Accuracy sowie das halbwegs
+profitbale Wetten konnte gezeigt werden, dass sich Fußballergebnisse zumindest in
+Ansätzen algorithmisch mit Hilfe von Modellen beschreiben lassen. Damit ist der Use
+Case zum Großteil erfüllt. Es ist jedoch kritisch anzumerken, dass auch sehr viele
+nicht genau spezifizierbare Zufallsvariablen einen Einfluss auf den Ausgang
+eines Spiels haben, sodass sich nie mit 100\%er Wahrscheinlichkeit der genaue Ausgang
+eines Fußballspiels vorhersagen lässt.
+
+
+Die Modell Accuracy von 53\% ist für sich genommen relativ vielversprechend.
+Sie zeigt, dass sich Fußballergebnisse zumindest in Ansätzen algorithmisch
+bestimmen lassen. Hierbei ist jedoch kritisch anzumerken, dass auch sehr viele nicht genau
+spezifizierbare Zufallsvariablen einen Einfluss auf den Ausgang eines Spiels haben.
+
+
+
+Abschließend lässt sich feststellen, dass man durch die
+Optimierung des Neural Networks die höchste Accuracy erreicht.
+Nach der Random Parameter Search konnten wir die Accuracy erhöhen.
+Wie bereits erwähnt lag diese final bei 53 Prozent.
+
+
+Mithilfe dieses Modells wurde das Betting bei Wettanbietern simuliert. Leider
+ kann man sehen, dass unser Modell schnell negative Summen erreicht
+  und einiges an Geld verliert. Der Fußball ist wohl doch ein
+  Gebiet mit zu vielen Zufallsvariablen, sodass man keine
+  Genauigkeit erzielen kann, die einen Wettanbieter schlägt.
+
+
+  Die Genauigkeit von 53 Prozent ist jedoch für sich genommen
+  recht vielversprechend. Es zeigt, dass sich der Fußball in
+  Ansätzen algorithmisch bestimmen lässt. Für unseren Business
+  Use Case ist dieses Ergebnis natürlich nicht hoch genug und
+  somit muss dieser verworfen werden. Es hat sich gezeigt, dass
+  man schnell Geld verliert bei der Nutzung unseres Modells.

@@ -10,11 +10,11 @@ Der erste Algorithmus ist ein statistischer. Dabei wurde der Time Series Decompo
 Bei dem TSD gibt es zwei verschiedene Methoden. Die additive und die multiplikative TSD. In dieser Arbeit wird die additive Methode verwendet.
 
 \begin{figure}[H]
-	
+
 	\centering
 	\includegraphics[scale=0.5]{\imagedir/Additive-Decompose.png}
 	\captionsetup{format=hang}
-	\caption[Additive Time Series Decompose]{\label{fig:test}Additive Time Series Decompose. \\Quelle: 
+	\caption[Additive Time Series Decompose]{\label{fig:test}Additive Time Series Decompose. \\Quelle:
 	\autocite{Radecic.15.7.2021}}
 
 \end{figure}
@@ -28,13 +28,13 @@ Additiv bedeutet hier, dass die individuellen Komponenten Trend, Seasonality und
 Der zweite Algorithmus ist der strukturelle. Hier wurde sich für einen Random Forest entschieden. Dieser eignet sich besonders gut für Klassifizierungs- und Regressionsaufgaben. Der Algorithmus ist ein überwachtes Lernverfahren (Supervised Learning) und greift zurück auf die Ergebnisse einer Vielzahl verschiedener Entscheidungsbäume. Dadurch ist es möglich bestmögliche Entscheidungen bzw. Vorhersagen zu treffen. Jeder Entscheidungsbaum wird nach einem Zufallsprinzip erstellt und trifft eine eigene, zufällig generierte, Entscheidung. Letztlich wird aus dieser Menge von Einzelentscheidungen eine Gesamtentscheidung getroffen. Dies funktioniert, indem der Algorithmus die einzelnen Entscheidungsbäume mithilfe einer Ensemble-Methode zusammenfügt. Dabei berechnet jeder der Entscheidungsbäume ein eigenes Modell, welches in die Gesamtentscheidung einfließt. Durch die zufällige Erstellung dieses Algorithmus wird die Ergebnisgenauigkeit erhöht. Dabei kann man bei der Erstellung des Random Forest einige Parameter anpassen und so das Gesamtmodell individuell verfeinern und modifizieren. \autocite[Vgl.][]{Luber.17.3.2020}. Ein Entscheidungsbaum stellt einen mehrstufigen Entscheidungsprozess mit allen Entscheidungsoptionen dar \autocite{t2informatik.WirentwickelnSoftware..06062018}.
 
 \begin{figure}[H]
-	
+
 	\centering
 	\includegraphics[scale=0.8]{\imagedir/Decision-Tree.png}
 	\captionsetup{format=hang}
-	\caption[Beispiel Entscheidungsbaum]{\label{fig:test}Beispiel Entscheidungsbaum. \\Quelle: 
+	\caption[Beispiel Entscheidungsbaum]{\label{fig:test}Beispiel Entscheidungsbaum. \\Quelle:
 		\cite{.06112021}}
-	
+
 \end{figure}
 
  Auf die Klassifizierung dieser Arbeit bezogen, werden alle Entscheidungen bezüglich auf das Musters getroffen. Letztlich soll das Modell bei Hereingabe eines SQL-Statements, diesem sein Muster zuweisen. Sei es nun stündlich, stündlich (Arbeitszeiten), täglich (Arbeitstage), täglich, wöchentlich, oder kein Muster.
@@ -46,44 +46,44 @@ Der zweite Algorithmus ist der strukturelle. Hier wurde sich für einen Random F
 Bei der Implementation wird gearbeitet mit einem manuell klassifizierten Datensatz. Bedeutet, dass für das Modell ungefähr 75 SQL-Statements mit den meisten Datenpunkten in der Zeitreihe, manuell über graphische Analysen klassifiziert wurden. Dies hat den Sinn, dass man diese tatsächliche Klassifikation dann mit der vorhergesagten Klassifikation des Modells abgleichen kann. Dadurch kann man die Güte des jeweiligen Modells feststellen. Im Datensatz sind alle erwähnten Muster vorhanden. Dies jedoch mit einer erheblichen Differenz in der Quantität. Die meisten SQL-Statements im Datensatz haben ein stündliches Muster. Es gibt nur sehr wenige Statements mit stündlichen (Arbeitszeiten) und täglichen (Arbeitstage) Mustern im Datensatz.
 
 \begin{figure}[H]
-	
+
 	\centering
 	\includegraphics[scale=1.7]{\imagedir/Example-dflabeled.png}
 	\captionsetup{format=hang}
 	\caption[Datensatz zum Training/Testen der Modelle]{\label{fig:test}Datensatz zum Training/Testen der Modelle. \\Quelle: Eigene Abbildung}
 \end{figure}
 
-Angefangen wird mit der Implementation des Time Series Decompose. Wie bereits erwähnt, teilt der Algorithmus eine Zeitreihe in einzelne Komponenten auf. 
+Angefangen wird mit der Implementation des Time Series Decompose. Wie bereits erwähnt, teilt der Algorithmus eine Zeitreihe in einzelne Komponenten auf.
 
 \begin{figure}[H]
-	
+
 	\centering
 	\includegraphics[scale=1.4]{\imagedir/TSD-Hourly.png}
 	\captionsetup{format=hang}
 	\caption[Beispiel stündlich Time Series Decompose]{\label{fig:test}Beispiel stündlich Time Series Decompose. \\Quelle: Eigene Abbildung}
-	
+
 \end{figure}
 
 In der Abbildung 4.4 zu sehen ist der Algorithmus angewandt auf eine Zeitreihe mit stündlichem Muster. Der oberste der vier Graphen zeigt die ursprüngliche Zeitreihe. Für die Mustererkennung ist der einzig relevante Wert Seasonal. Da die Daten dieser Zeitreihe über einige Monate hinweg gehen, kann man in diesem Fall nicht sonderlich viel erkennen.
 
 \begin{figure}[H]
-	
+
 	\centering
 	\includegraphics[scale=1.7]{\imagedir/TSD-Hourly-Week.png}
 	\captionsetup{format=hang}
 	\caption[Beispiel stündlich Time Series Decompose einer Woche]{\label{fig:test}Beispiel stündlich Time Series Decompose einer Woche. \\Quelle: Eigene Abbildung}
-	
+
 \end{figure}
 
 Dies ist dasselbe SQL-Statement mit dem Wert Seasonal nach der Anwendung des TSD aber vergrößert auf den Zeitraum einer einzelnen Woche. Zu sehen ist eine stark fluktuierende Zeitreihe. An diesen Schwankungen in der Seasonality soll das Modell ein Muster erkennen. Dabei werden die jeweiligen SQL-Statements vom Modell auf die Anzahl ihrer Extrempunkte überprüft. Desto öfter ein Statement ausgeführt wird, desto öfter schwankt der Wert der Seasonality. Bei Statements die weniger oft ausgeführt werden, wird es auch weniger Extrempunkte geben. Zur Verdeutlichung dieser Mustererkennung dient die nächste Abbildung.
 
 \begin{figure}[H]
-	
+
 	\centering
 	\includegraphics[scale=0.6]{\imagedir/Comparison-TSD.png}
 	\captionsetup{format=hang}
 	\caption[Beispiel Vergleich TSD Stündlich und Wöchentlich]{\label{fig:test}Beispiel Vergleich TSD Stündlich und Wöchentlich. \\Quelle: Eigene Abbildung}
-	
+
 \end{figure}
 
 Hier zu sehen ist der Seasonal-Wert des TSD jeweils bei einem stündlichen Muster und bei einem wöchentlichen Muster. Der Wert der Seasonality sagt nicht aus, wie oft ein Statement ausgeführt wird. Beim wöchentlichen Muster sieht es irreführend aus, da es aussieht als sei es ein tägliches Muster. Es geht hier lediglich um die Anzahl der Extrempunkte. Beim Überprüfen der Anzahl der Extrempunkte des stündlichen Beispiels kommt man auf 97 Extrempunkte. Hingegen kommt man auf 7 Extrempunkte  beim wöchentlichen Muster. Basierend auf diesen Werten und zuzüglich weiterer Statements kann man eine Funktion aufstellen, die anhand der Anzahl der Extrempunkte ein SQl-Statement klassifizieren kann.
@@ -135,12 +135,12 @@ Beim Random Forest wird das Modell mit den optimalen Parametern der Grid-Search 
 An der Genauigkeit erkennt man einen großen Unterschied in der Qualität der beiden Algorithmen bei dieser Klassifikation. Der Random Forest hat deutlich bessere Ergebnisse mit ungefähr 25\% höherer Genauigkeit als der TSD.
 
 \begin{figure}[H]
-	
+
 	\centering
 	\includegraphics[scale=1]{\imagedir/Comparison-Algorithms.png}
 	\captionsetup{format=hang}
 	\caption[Vergleich der Algorithmen]{\label{fig:test}Vergleich der Algorithmen. \\Quelle: Eigene Abbildung}
-	
+
 \end{figure}
 
 Diese Abbildung verdeutlicht die Qualität der Algorithmen. Das Base Model ist hierbei als Basis zum Vergleich. Es klassifiziert jedes SQL-Statement mit der Klasse täglich. Allein mit dieser simplen Klassifikation erreicht es eine Genauigkeit von 45.57\%. Dies liegt daran, dass im Trainings-/Testdatensatz 45.57\% aller SQl-Statements die Klasse täglich besitzen. Zu erkennen ist, dass der TSD-Algorithmus sogar unter diesem Base Model liegt. Somit ist er  bei dieser Klassifikation nicht zu empfehlen. Der Random Forest liegt um einiges über beiden Modellen und ist im direkten Vergleich zu empfehlen.
