@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Umsetzung}{3}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Ergebnisse}{3}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Ergebnisse}{4}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Use Case Validierung durch simulierte Wetten}{4}{section.3.3}%
 \defcounter {refsection}{0}\relax 
