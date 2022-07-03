@@ -4,11 +4,31 @@
 \section{Umsetzung}
 
 Eine der wohl wichtigsten Entscheidungen bei der Implementation
-eines Machine Learning Modells sind die ausgewählten Rohdaten.
+eines Machine Learning Modells ist die Auswahl der Rohdaten.
 Nach intensiver Recherche wurde sich für einen Datensatz
 entschieden welcher Informationen über alle Bundesliga-Spiele
 seit der Saison 2005/2006 enthält. Dieser Rohdatensatz besitzt
-65+ Features. Im Preprocessing wurden einige unvollständige
+65+ Features. Während des Preprocessings wurde die Anzahl der Features durch
+das Löschen unvollständiger oder für das Modell unnötiger Features, zum Beispiel die
+Odds verschiedener Wettanbieter, deutlich reduziert. Diese Features wurden dann
+harmonisiert und mit einer Korrelationsmatrix auf ihre Aussagekraft geprüft.
+Da diese nach der ersten Featureauswahl noch nicht zufriedenstellend war
+wurden weitere Features berechnet und in den Datensatz aufgenommen. So wurden
+beispielsweise die aktuelle Form der Mannschaften (Elo) sowie Angriffs- und
+Verteidigungswerte errechnet. Um die Aussagekraft weiter zu erhöhen wurden außerdem
+Features eingeführt, die einen direktern Vergleich der Mannschaften ermöglichen.
+Diese Features sind zum Beispiel Differenzen der Elo und Angriffs- sowie Verteidigungswerte
+oder die Anzahl der Punkte und Tore, die eine Mannschaft während der letzten Spiele erzielt hat.
+
+(Hier Grafik von Datensatz)
+
+Dadurch, dass die Zielvariablen bereits im Datensatz  vorliegen
+handelt es sich um ein Supervised Learning-Problem. Dieses wurde
+wie im Theorieteil erwähnt mit drei verschiedenen Methoden angegangen.
+Dem Ensemble Learning, einem Neural Network sowie einem mathematischen Ansatz.
+
+
+Im Preprocessing wurden einige unvollständige
 Spieldaten gelöscht und viele unnötige Features - wie die Betting
 Odds der Anbieter. Nach Harmonisierung der Daten wurden die
 Features auf die Anzahl 21 reduziert.  (Hier Grafik von Datensatz).
@@ -37,7 +57,7 @@ etwa 50 Prozent erreicht (Grafik).
 \section{Use Case Validierung durch simulierte Wetten}
 
 Um zu testen, wie gut das Modell unter Realbedingungen funktioniert
-wurden Wetten im Verlauf der Saison 2021/22 simuliert. Für die
+wurden im Verlauf der Saison 2021/22 Wetten simuliert. Für die
 Simulation wurden die Predictions des Modells mit den Predictions von
 vier verschiedenen Wettanbietern verglichen. Um die Predictions der
 Wettanbieter zu erhalten wurde zuerst der Durchschnitt der Odds der
