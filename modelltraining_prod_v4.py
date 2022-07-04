@@ -75,7 +75,8 @@ def print_corrlation_matrix_small(correlation_matrix_match_data_reduced: pd.Data
             features: list of used features
 
     """
-    correlation_matrix_match_data_reduced = correlation_matrix_match_data_reduced.loc[features, :]
+    correlation_matrix_match_data_reduced = correlation_matrix_match_data_reduced.loc[
+        features, :]
     correlation_matrix_match_data_reduced.style.background_gradient()
 
 
@@ -141,7 +142,7 @@ def print_accuracy(X_train, y_train, X_test, y_test, model):
     return pred_train, pred_test
 
 
-def get_predictions(pred_test, y_test: list = None, alpha: float = 0.):
+def get_predictions_from_model(pred_test, alpha: float = 0.):
     y_pred = []
     for test in pred_test:
         if test[2] > test[1] and test[2] > test[0] and abs(test[2] - test[0]) > alpha:
@@ -150,16 +151,16 @@ def get_predictions(pred_test, y_test: list = None, alpha: float = 0.):
             y_pred.append(0)
         else:
             y_pred.append(1)
+    return y_pred
 
-    if y_test is None:
-        return y_pred
-    else:
-        y_test_res = []
-        for test in y_test:
-            for counter, j in enumerate(test):
-                if np.max(test) == j:
-                    y_test_res.append(counter)
-        return y_test_res, y_pred
+
+def get_predictions_from_test(y_test: list):
+    y_test_res = []
+    for test in y_test:
+        for counter, j in enumerate(test):
+            if np.max(test) == j:
+                y_test_res.append(counter)
+    return y_test_res
 
 
 def print_confusion_matrix(y_test_res, y_pred):
@@ -267,7 +268,7 @@ def plot_loss_history(history) -> None:
 
 def predict_season_2022(X_test_s_2022, model, match_data_bl_wo_nan_s_2022) -> None:
     data = model.predict(X_test_s_2022)
-    predicted_data_random_results = get_predictions(data)
+    predicted_data_random_results = get_predictions_from_model(data)
     predicted_data_random = pd.DataFrame(data, columns=[
                                          'ProbAwayWin', 'ProbDraw', 'ProbHomeWin'], index=match_data_bl_wo_nan_s_2022.index)
     match_data_bl_wo_nan_s_2022.loc[:, [
@@ -275,6 +276,16 @@ def predict_season_2022(X_test_s_2022, model, match_data_bl_wo_nan_s_2022) -> No
     match_data_bl_wo_nan_s_2022.loc[:,
                                     'predictedResults'] = predicted_data_random_results
     match_data_bl_wo_nan_s_2022.to_csv(".//match_data_predicted_bl_22.csv")
+    return predicted_data_random_results
+
+
+def print_confusion_matrix(y_test_res, y_pred):
+    from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+    # , labels=["Draw", "Home", "Away"])
+    cf = confusion_matrix(y_test_res, y_pred)
+    cfd = ConfusionMatrixDisplay(cf, display_labels=["Away", "Draw", "Home"])
+    cfd.plot(cmap=plt.cm.Blues)
+    plt.show()
 
 
 if __name__ == '__main__':
@@ -293,21 +304,33 @@ if __name__ == '__main__':
     # print correlation matrix
     print_corrlation_matrix_large(match_data_bl)
     reduced_match_data_bl_corr = print_corrlation_matrix_middle(match_data_bl)
-    features = ["DiffEloOld", "DiffAttackOld", "DiffDefendOld", "PDiff3Matches", "PDiff10Matches", "PQuotAllMatches",
+    features = ["DiffEloOld", "DiffAttackOld", "DiffDefendOld", "PDiff3Matches", "PDiff10Matches", "PDiffAllMatches",
                 "MarketValueDiff", "DirectComparisonHG", "DirectComparisonAG"]
     print_corrlation_matrix_small(
         reduced_match_data_bl_corr, features=features)
 
+    # predict for random data
     match_data_bl_wo_nan = match_data_bl.dropna(subset=features)
     X, y, X_train, X_test, y_train, y_test = split_train_test_data(
         features, match_data_bl_wo_nan)
+    model_random, history_season_random = train_final_model(
+        X, to_categorical(y), number_of_epochs=15)
+    predictions = model_random.predict(X_test)
+    print_confusion_matrix(
+        y_test, get_predictions_from_model(predictions, alpha=0.1))
+
+    # predict for season 2022
     X_train_s_2022, X_test_s_2022, y_train_s_2022, y_test_s_2022, match_data_bl_wo_nan_s_2022\
         = split_train_test_data_for_predicting_s_22(X, y, match_data_bl_wo_nan)
 
-    model_season_2022, history_season_2022 = train_final_model(X_train_s_2022, y_train_s_2022, number_of_epochs=20,
+    model_season_2022, history_season_2022 = train_final_model(X_train_s_2022, y_train_s_2022, number_of_epochs=15,
                                                                validation_data=(X_test_s_2022, y_test_s_2022))
-    model_random, history_season_random = train_final_model(
-        X, to_categorical(y), number_of_epochs=20)
 
     predict_season_2022(X_test_s_2022, model_season_2022,
                         match_data_bl_wo_nan_s_2022)
+
+    y_prediction_season_2022 = predict_season_2022(
+        X_test_s_2022, model_season_2022, match_data_bl_wo_nan_s_2022)
+
+    print_confusion_matrix(get_predictions_from_test(
+        y_test_s_2022), y_prediction_season_2022)
