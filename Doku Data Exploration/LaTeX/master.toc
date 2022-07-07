@@ -7,11 +7,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Abkürzungsverzeichnis}{v}{chapter*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Hintergrund und Motivation}{1}{section.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Business Use Case}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {1}Zufall und Vorhersehbarkeit im Fußball}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{2}{chapter.2}%
 \defcounter {refsection}{0}\relax 
