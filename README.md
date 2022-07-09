@@ -30,8 +30,8 @@ Als Datenbasis dienen alle Fußballspiele ab der Saison 2006/2007 bis zur Saison
 		(1) Klonen des Github-Repository (Branch: main)
 		(2) Öffnen der CMD und navigieren in den Git-Hub-Ordner
 		(3) CMD-Command 'py -3.X -m venv Hoyzer' (Bash: 'python3.X -m venv HoyzerVenv') ausführen
-		    (erstellt die virtuell Environment, ersetzen von X durch die vorhandene Python-Version)
-		(4) "HoyzerVenv\Scripts\activate.bat" in CMD ausführen (aktiviert die virtuell Environment)
+		    (erstellt die virtual Environment, ersetzen von X durch die vorhandene Python-Version)
+		(4) "HoyzerVenv\Scripts\activate.bat" in CMD ausführen (aktiviert die virtual Environment)
 		(4) CMD-Command "pip install -r requirements.txt" ausführen 
 		(5) Auswählen der python version der venv als Kernel; 
 		    Ausführen der Python-Datei/ Notebooks anschließend möglich
