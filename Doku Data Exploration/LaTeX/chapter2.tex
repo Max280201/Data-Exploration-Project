@@ -13,7 +13,7 @@ oder die Anzahl der Punkte und Tore, die eine Mannschaft während der letzten Sp
 \begin{figure}[H]
 	
 	\centering
-	\includegraphics[scale=0.35]{\imagedir/Datensatz.png}
+	\includegraphics[scale=1.25]{\imagedir/Datensatz.png}
 	\captionsetup{format=hang}
 	\caption[Datensatz]{\label{fig:test}Datensatz.}
 	
@@ -29,25 +29,25 @@ Angefangen beim Ensemble Learning erkennt man verschiedene Accuracys je Algorith
 \begin{figure}[H]
 	
 	\centering
-	\includegraphics[scale=0.25]{\imagedir/Ensemble.png}
+	\includegraphics[scale=0.3]{\imagedir/Ensemble.png}
 	\captionsetup{format=hang}
 	\caption[Ensemble Learning]{\label{fig:test}Ensemble Learning.}
 	
 \end{figure}
 Hierbei sind die Logistic Regression und Linear Discriminant Analysis am Besten. Das Stacking Modell welches alle Modelle vereint schneidet auch gut ab. Alle drei liegen bei einer Accuracy von etwas über 50\%}. Bei Betrachtung des Neural Networks fällt auf, dass die Accuracy
-schon nach wenigen Epochen auf etwas unter 50\% konvergiert.
+schon nach wenigen Epochen auf leicht über 50\% konvergiert.
 \begin{figure}[H]
 	
 	\centering
-	\includegraphics[scale=0.55]{\imagedir/NeuralNetwork.png}
+	\includegraphics[scale=1]{\imagedir/NeuralNetwork.png}
 	\captionsetup{format=hang}
 	\caption[Neural Network]{\label{fig:test}Neural Network.}
 	
 \end{figure}
-Nach einer Random Parameter Search konnte diese auf 53\% angehoben werden. Zuletzt haben wir mit der Poisson-Verteilung des mathematischen Ansatzes eine Accuracy von
+Nach einer Random Parameter Search konnte diese ein Maximum von 53\% erreichen. Das Modell lag insgesamt bei ungefähr 52\%. Zuletzt haben wir mit der Poisson-Verteilung des mathematischen Ansatzes eine Accuracy von
 etwa 50 Prozent erreicht. Die Angaben der Quelle konnten somit nicht validiert werden.
 
-Um zu testen, wie gut das Modell unter Realbedingungen funktioniert
+Um zu Testen, wie gut das Modell unter Realbedingungen funktioniert
 wurden im Verlauf der Saison 2021/22 Wetten simuliert. Für die
 Simulation wurden die Predictions des Modells mit den Predictions von
 vier verschiedenen Wettanbietern verglichen. Um die Predictions der
@@ -63,7 +63,7 @@ Auf die gesamte Saison 2021/22 betrachtet ergibt sich folgende Grafik.
 \begin{figure}[H]
 	
 	\centering
-	\includegraphics[scale=0.35]{\imagedir/Betting.png}
+	\includegraphics[scale=1.5]{\imagedir/Betting.png}
 	\captionsetup{format=hang}
 	\caption[Ensemble-Learning]{\label{fig:test}Betting.}
 	
