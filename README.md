@@ -12,7 +12,8 @@
 	- Empfohlene Version: 
 		(1) Klonen des Github-Repository (Branch: main)
 		(2) Öffnen der CMD und navigieren in den Git-Hub-Ordner
-		(3) CMD-Command "python3.X.X -m venv HoyzerVenv" asuführen (erstellt die virtuell Environment, ersetzen von XX durch die vorhandene Python-Version)
+		(3) CMD-Command "python3.X.X -m venv HoyzerVenv" asuführen (erstellt die virtuell Environment, 
+		    ersetzen von XX durch die vorhandene Python-Version)
 		(4) "HoyzerVenv\Scripts\activate.bat" in CMD ausführen (aktiviert die virtuell Environment)
 		(4) CMD-Command "pip install -r requirements.txt" ausführen 
 		(5) Auswählen der python version der venv als Kernel; Ausführen der Python-Datei/ Notebooks anschließend möglich
