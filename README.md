@@ -24,10 +24,10 @@
 ```
     (1) preprocessing_pipeline_v1.ipynb: kombiniert die csv-Dateien der Saisonspiele und die Marktwerte, 
                                          Datenvorverarbeitung und Berechnung weiterer Features
-		(2) modelltraining_prod_v4.py: Modelltraining eines NN (sowohl eines, um die letzte Saison vohrerzusagen, 
+    (2) modelltraining_prod_v4.py: Modelltraining eines NN (sowohl eines, um die letzte Saison vohrerzusagen, 
                                                             als auch eins, um zufällige Spiele des Bereichs vorherzusagen) 
                                    und kurze Evaluation des Modells 
-		(3) modelltraining_test_area_v4.ipynb: enthält alle relevanten getesteten Techniken für das Modell und Alternativen
-                                     (Hyperparametertuning, Ensemble-Learning, Poission-Prediction)
-		(4) translate_betting_odds.ipynb: Auswertung und Vorverarbeitung der Wettquoten
+    (3) modelltraining_test_area_v4.ipynb: enthält alle relevanten getesteten Techniken für das Modell und Alternativen
+                                           (Hyperparametertuning, Ensemble-Learning, Poission-Prediction)
+    (4) translate_betting_odds.ipynb: Auswertung und Vorverarbeitung der Wettquoten
     (5) evaluate_model_odd_predictions_v2.ipynb: Vergleich des trainierten Modells mit Wettanbietern und Auswertung
