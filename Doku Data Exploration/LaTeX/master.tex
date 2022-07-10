@@ -41,7 +41,7 @@
 \ArtDerArbeit{Projekt} % "Bachelor" oder "Projekt" wählen
 \TitelDerArbeit{Bundesliga Match Predictions}
 \AutorDerArbeit{Max Bernauer, Philipp Dingfelder, Julius Könning}
-\Abteilung{Data Exploration}
+\Abteilung{Data Exploration Project}
 \Firma{SAP SE, Schaeffler}
 \Kurs{WWI20DSB}
 \Studienrichtung{Data Science}
@@ -91,6 +91,7 @@
 %\newcommand{\position}{footnote}
 
 %% Final: Setzen des Zitierstils und der Zitatposition
+
 \usepackage[backend=biber, autocite=\position, style=\indextype]{biblatex} 	
 %\settingBibFootnoteCite
 
@@ -136,8 +137,8 @@
 %
 % @stud: acknowledge.tex bearbeiten
 %
-\input{acknowledge}
-\cleardoublepage 
+%\input{acknowledge}
+%\cleardoublepage 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,16 +150,16 @@
 \cleardoublepage
 
 % Abbildungsverzeichnis
-\phantomsection
-\addcontentsline{toc}{chapter}{\listfigurename}
-\listoffigures
-\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{\listfigurename}
+%\listoffigures
+%\cleardoublepage
 
 %	Tabellenverzeichnis
-\phantomsection
-\addcontentsline{toc}{chapter}{\listtablename}
-\listoftables
-\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{\listtablename}
+%\listoftables
+%\cleardoublepage
 
 % Algorithmenverzeichnis
 %\listofalgorithms
@@ -166,8 +167,8 @@
 
 % Abkürzungsverzeichnis
 % @stud: acronyms.tex bearbeiten
-\input{acronyms} 
-\cleardoublepage
+%\input{acronyms} 
+%\cleardoublepage
 
 %	Kurzfassung / Abstract
 % @stud: abstract.tex bearbeiten
@@ -206,7 +207,7 @@
 % @stud: einzelne Anhänge bearbeiten und eigene Anhänge hier einfügen 
 %        die nachfolgenden Zeilen deaktivieren, wenn keine Anhänge verwendet werden
 %
-\initializeAppendix
+%\initializeAppendix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \singlespacing
@@ -218,6 +219,7 @@
 % Alternative zu Verwendung von \initializeBibliography: Citavi ...
 % (dann \initializeBibliography auskommentieren und eigenes LaTex Coding verwenden)
 %
+
 \printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

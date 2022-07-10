@@ -1,14 +1,13 @@
 % !TEX root =  master.tex
-\chapter{Praktischer Teil}
+\chapter{Praktische Umsetzung der Match Prediction}
 
 \section{Umsetzung}
-Die gewählte Datenbasis enthält alle Bundesliga-Spiele seit der Saison 2005/2006 mit
+Die gewählte Datenbasis enthält alle Bundesliga-Spiele seit der Saison 2006/2007 mit
 65+ Features. Während des Preprocessings wurde die Anzahl der Features durch
-das Löschen nicht relevanter Features deutlich reduziert. Diese Features wurden dann
+Entfernen irrelevanter Features deutlich reduziert. Diese Features wurden dann
 harmonisiert und mit einer Korrelationsmatrix auf ihre Aussagekraft geprüft.
-Zur Verbesserung des Datensatzes wurden die aktuelle Form der Mannschaften (Elo) sowie Angriffs- und Verteidigungswerte errechnet. Um die Aussagekraft weiter zu erhöhen wurden außerdem Features eingeführt, die einen direkten Vergleich der Mannschaften ermöglichen.
-Diese Features sind bspw. Differenzen der Elo und Angriffs- sowie Verteidigungswerte
-oder die Anzahl der Punkte und Tore, die eine Mannschaft während der letzten Spiele erzielt hat.
+Zur Verbesserung der Aussagekraft vom Datensatz wurden die aktuelle Form der Mannschaften (Elo) sowie Angriffs- und Verteidigungswerte errechnet. Um die Aussagekraft weiter zu erhöhen wurden außerdem Features eingeführt, die einen direkten Vergleich der Mannschaften ermöglichen.
+Diese Features sind bspw. Differenzen der Elo und Angriffs- sowie Verteidigungswerte oder die Anzahl der Punkte und Tore, die eine Mannschaft während der letzten Spiele erzielt hat.
 
 \begin{figure}[H]
 	
@@ -20,7 +19,7 @@ oder die Anzahl der Punkte und Tore, die eine Mannschaft während der letzten Sp
 \end{figure}
 
 Dadurch, dass die Zielvariablen bereits im Datensatz  vorliegen
-handelt es sich um ein Supervised Learning-Problem. Dieses wurde
+handelt es sich um ein supervised Learning-Problem. Dieses wurde
 wie im Theorieteil erwähnt mit drei verschiedenen Methoden angegangen.
 Dem Ensemble Learning, einem Neural Network sowie einem mathematischen Ansatz.
 
@@ -34,32 +33,30 @@ Angefangen beim Ensemble Learning erkennt man verschiedene Accuracys je Algorith
 	\caption[Ensemble Learning]{\label{fig:test}Ensemble Learning.}
 	
 \end{figure}
-Hierbei sind die Logistic Regression und Linear Discriminant Analysis am Besten. Das Stacking Modell welches alle Modelle vereint schneidet auch gut ab. Alle drei liegen bei einer Accuracy von etwas über 50\%}. Bei Betrachtung des Neural Networks fällt auf, dass die Accuracy
-schon nach wenigen Epochen auf leicht über 50\% konvergiert.
+Hierbei sind die Logistic Regression und Linear Discriminant Analysis am Besten. Das Stacking Modell, welches alle Modelle vereint, schneidet ebenfalls gut ab. Alle drei liegen bei einer Accuracy von etwas über 50\%. Bei Betrachtung des Neural Networks fällt auf, dass die Accuracy schon nach wenigen Epochen auf leicht über 50\% konvergiert.
 \begin{figure}[H]
 	
 	\centering
-	\includegraphics[scale=1]{\imagedir/NeuralNetwork.png}
+	\includegraphics[scale=1.6]{\imagedir/NeuralNetwork.png}
 	\captionsetup{format=hang}
 	\caption[Neural Network]{\label{fig:test}Neural Network.}
 	
 \end{figure}
-Nach einer Random Parameter Search konnte diese ein Maximum von 53\% erreichen. Das Modell lag insgesamt bei ungefähr 52\%. Zuletzt haben wir mit der Poisson-Verteilung des mathematischen Ansatzes eine Accuracy von
-etwa 50 Prozent erreicht. Die Angaben der Quelle konnten somit nicht validiert werden.
+Mithilfe einer Random Parameter Search konnte ein Maximum von 53\% erreicht werden. Nach finaler Evaluierung des Modells lag es insgesamt bei ungefähr 52\%. Zuletzt haben wir mit der Poisson-Verteilung des mathematischen Ansatzes eine Accuracy von
+etwa 46\% erreicht. Die Angaben der Quelle konnten somit für unseren Fall nicht bestätigt werden.
 
 Um zu Testen, wie gut das Modell unter Realbedingungen funktioniert
 wurden im Verlauf der Saison 2021/22 Wetten simuliert. Für die
-Simulation wurden die Predictions des Modells mit den Predictions von
+Simulation wurden die Predictions des Modells mit den Vorhersagen von
 vier verschiedenen Wettanbietern verglichen. Um die Predictions der
 Wettanbieter zu erhalten wurde zuerst der Durchschnitt der Odds der
 Wettanbieter für jedes Ereignis (Sieg Heimteam, Unentschieden, Sieg Auswärtsteam)
 ermittelt. Dieser Durchschnitt wurde dann in eine Prozentzahl umgewandelt
-und nach dem Maximum gefiltert um eine Prediction für jeden Spieltag zu erhalten.
+und nach dem Maximum gefiltert um eine Spielvorhersage für jeden Spieltag zu erhalten.
 Um auf die Predictions zu setzen mussten diese einen gewissen Schwellwert (XX\% Sicherheit) überschreiten.
-Bei Überschreitung des Schwellwerts wurde je nach Höhe der \% Zahl ein bestimmter Betrag gewettet.
-(Grafik wie viel ab welcher \% Zahl gewettet wird)
+Bei Überschreitung des Schwellwerts wurde je nach Höhe der Prozentzahl ein bestimmter Betrag gewettet.
 
-Auf die gesamte Saison 2021/22 betrachtet ergibt sich folgende Grafik.
+Auf die gesamte Saison 2021/22 betrachtet ergibt sich bei Wetten ab 90\% Sicherheit folgende Grafik.
 \begin{figure}[H]
 	
 	\centering
@@ -68,6 +65,4 @@ Auf die gesamte Saison 2021/22 betrachtet ergibt sich folgende Grafik.
 	\caption[Ensemble-Learning]{\label{fig:test}Betting.}
 	
 \end{figure}
-Es lässt sich erkennen, dass das Modell am Ende der Saison zwar mehr Gewinn gemacht
-hat, die Wettanbieter aber im Laufe der Saion besser performen. Auf die Bedeutung der Grafik
-in Bezug auf den Business Use Case wird im Fazit genauer eingegangen.
+Für alle Schwellenwerte lässt sich feststellen, dass es keinen signifikanten Unterschied macht, ob man unser Modell oder die Wettanbieter nutzt. Je nach Schwellenwert lässt sich mit beiden Methoden über die Saison bis zu 6\% Gewinn erzielen. Auf die Bedeutung der Grafik in Bezug auf den Business Use Case wird im Fazit genauer eingegangen.
