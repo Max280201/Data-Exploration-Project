@@ -3,7 +3,7 @@
 
 ## Projektbeschreibung
 
-Diese Projekt wurde im Rahmen der Vorlesungseinheit "Data Exploration" entwickelt. Zielsetzung des Projektes ist es, Fußballspiele der Bundesliga bestmöglich vorherzusagen. Außerdem soll gezeigt werden, ob es möglich ist, Gewinn durch Sportwetten mit dem Modell zu erzielen.
+Dieses Projekt wurde im Rahmen der Vorlesungseinheit "Data Exploration" entwickelt. Zielsetzung des Projektes ist es, das Ergebnis vom Fußballspielen der Bundesliga bestmöglich vorherzusagen. Außerdem soll gezeigt werden, ob es möglich ist, Gewinn durch Sportwetten mit dem Modell zu erzielen.
 
 Als Datenbasis dienen alle Fußballspiele ab der Saison 2006/2007 bis zur Saison 2021/2022. Die Daten werden erst aggregiert, ausgewertet und mit bestimmten Features (Form eines Team, Angriffs- und Verteidigungsstärke, Elo, direkter Vergleich) angereichert. Anschließend erfolgt ein Modelltraining und die Evaluation mithilfe von Quoten bestimmter Wettanbieter, die über die gesamten Zeitraum der Datenbasis vorliegen. Eine genaue Beschreibung der einzelnen Notebooks findet im Folgenden statt.
 
@@ -12,7 +12,7 @@ Als Datenbasis dienen alle Fußballspiele ab der Saison 2006/2007 bis zur Saison
     (1) preprocessing_pipeline_v1.ipynb: kombiniert die csv-Dateien der Saisonspiele und die Marktwerte; 
                                          außerdem Datenvorverarbeitung und Berechnung weiterer Features
     (2) modelltraining_prod_v4.py: Modelltraining eines NN (sowohl eines, um die letzte Saison vohrerzusagen, 
-                                                            als auch eins, um zufällige Spiele des Bereichs vorherzusagen) 
+                                                            als auch eines, um zufällige Spiele des Bereichs vorherzusagen) 
                                    und kurze Evaluation des Modells 
     (3) modelltraining_test_area_v4.ipynb: enthält alle relevanten getesteten Techniken für das Modell und Alternativen
                                            (Hyperparametertuning, Ensemble-Learning, Poission-Prediction)
@@ -24,7 +24,7 @@ Als Datenbasis dienen alle Fußballspiele ab der Saison 2006/2007 bis zur Saison
 ## Installation des Programms:
 ```
 	- Lazy Version:
-		○ Pip install -r requirements.txt
+		○ pip install -r requirements.txt
 
 	- Empfohlene Version: 
 		(1) Klonen des Github-Repository (Branch: main)
