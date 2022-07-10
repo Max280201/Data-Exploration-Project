@@ -16,3 +16,5 @@
 \contentsline {section}{\numberline {3.2}Ergebnisse und Use Case-Validierung}{4}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Fazit}{6}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literatur}{7}{chapter*.6}%

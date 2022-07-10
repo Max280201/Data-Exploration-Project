@@ -1,0 +1,213 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{Doan.}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8104cfa8178a3cd1bc50765eaccc6ecd}{%
+           family={Doan},
+           familyi={D\bibinitperiod},
+           given={Tuan\bibnamedelima Nguyen},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8104cfa8178a3cd1bc50765eaccc6ecd}
+      \strng{fullhash}{8104cfa8178a3cd1bc50765eaccc6ecd}
+      \strng{bibnamehash}{8104cfa8178a3cd1bc50765eaccc6ecd}
+      \strng{authorbibnamehash}{8104cfa8178a3cd1bc50765eaccc6ecd}
+      \strng{authornamehash}{8104cfa8178a3cd1bc50765eaccc6ecd}
+      \strng{authorfullhash}{8104cfa8178a3cd1bc50765eaccc6ecd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Some time ago, I developed and wrote about an ML-free algorithm to predict the Premier League results using a simple Poisson process. The track record of the program was more impressive than I thought.}
+      \field{title}{`Making big bucks' with a data-driven sports betting strategy}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{15/05/2019}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Doan 15.3.2019 - `Making big bucks':Attachments/Doan 15.3.2019 - `Making big bucks'.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/making-big-bucks-with-a-data-driven-sports-betting-strategy-6c21a6869171
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/making-big-bucks-with-a-data-driven-sports-betting-strategy-6c21a6869171
+      \endverb
+    \endentry
+    \entry{.}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db112308e03dac63e75ed89ce65c0734}{%
+           family={{Dr. Roland Loy}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{db112308e03dac63e75ed89ce65c0734}
+      \strng{fullhash}{db112308e03dac63e75ed89ce65c0734}
+      \strng{bibnamehash}{db112308e03dac63e75ed89ce65c0734}
+      \strng{authorbibnamehash}{db112308e03dac63e75ed89ce65c0734}
+      \strng{authornamehash}{db112308e03dac63e75ed89ce65c0734}
+      \strng{authorfullhash}{db112308e03dac63e75ed89ce65c0734}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pagetotal}{4}
+      \field{title}{Sportwissenschaftliche Erkenntnisse zur Taktik im Fu{ß}ballsport}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Layout 1:Attachments/Layout 1.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.bdfl.de/images/ITK/2011/05_Loy.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.bdfl.de/images/ITK/2011/05_Loy.pdf
+      \endverb
+    \endentry
+    \entry{Hartley.05102022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36e030b582ac0eb30abeea0ff7c68d15}{%
+           family={Hartley},
+           familyi={H\bibinitperiod},
+           given={Liam},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36e030b582ac0eb30abeea0ff7c68d15}
+      \strng{fullhash}{36e030b582ac0eb30abeea0ff7c68d15}
+      \strng{bibnamehash}{36e030b582ac0eb30abeea0ff7c68d15}
+      \strng{authorbibnamehash}{36e030b582ac0eb30abeea0ff7c68d15}
+      \strng{authornamehash}{36e030b582ac0eb30abeea0ff7c68d15}
+      \strng{authorfullhash}{36e030b582ac0eb30abeea0ff7c68d15}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{``I've got a hunch that Chelsea is going to win'' isn't a very good argument for why you should place a bet. ``I'm using an algorithm that is proven to accurately predict outcomes better than the$\ldots$}
+      \field{day}{5}
+      \field{journaltitle}{Medium}
+      \field{month}{10}
+      \field{title}{Accurately Predicting Football with Python {\&} SQL - Liam Hartley - Medium}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://liamjhartley.medium.com/accurately-predicting-football-with-python-sql-9353ad0e6856
+      \endverb
+      \verb{url}
+      \verb https://liamjhartley.medium.com/accurately-predicting-football-with-python-sql-9353ad0e6856
+      \endverb
+    \endentry
+    \entry{Accso.14102021}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7938a92759cf77498b8a7ec97c3ce190}{%
+           family={{Nicolai Minter}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7938a92759cf77498b8a7ec97c3ce190}
+      \strng{fullhash}{7938a92759cf77498b8a7ec97c3ce190}
+      \strng{bibnamehash}{7938a92759cf77498b8a7ec97c3ce190}
+      \strng{authorbibnamehash}{7938a92759cf77498b8a7ec97c3ce190}
+      \strng{authornamehash}{7938a92759cf77498b8a7ec97c3ce190}
+      \strng{authorfullhash}{7938a92759cf77498b8a7ec97c3ce190}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wir haben eine Künstliche Intelligenz entwickelt, die mithilfe von Machine Learning die Ergebnisse der Fu{ß}ballbundesliga vorhersagt.}
+      \field{title}{Mit künstlicher Intelligenz zum Bundesliga-Tippkönig - ein Deepdive}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{09/12/2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://accso.de/magazin/bundesliga-tippen-mit-ki/
+      \endverb
+      \verb{url}
+      \verb https://accso.de/magazin/bundesliga-tippen-mit-ki/
+      \endverb
+    \endentry
+    \entry{.06102018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3c0b3dbf760c38e6660567b5bdd3ef7}{%
+           family={{Sepp Herberger}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
+      \strng{fullhash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
+      \strng{bibnamehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
+      \strng{authorbibnamehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
+      \strng{authornamehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
+      \strng{authorfullhash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Gibt es also doch keinen Bayern-Dusel? Martin Lames von der Technischen Universität München erforscht, welche Rolle Glück und Zufall im Profifu{ß}ball spielen.}
+      \field{day}{6}
+      \field{journaltitle}{Süddeutsche Zeitung}
+      \field{month}{10}
+      \field{title}{Fu{ß}ball: Gut die Hälfte aller Tore fallen aus Zufall}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Fu{\ss}ball Gut die H{\"a}lfte aller 06 10 2018:Attachments/Fu{\ss}ball Gut die H{\"a}lfte aller 06 10 2018.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sueddeutsche.de/muenchen/fussball-tore-zufall-forschung-professor-fc-bayern-dusel-1.4008709
+      \endverb
+      \verb{url}
+      \verb https://www.sueddeutsche.de/muenchen/fussball-tore-zufall-forschung-professor-fc-bayern-dusel-1.4008709
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
