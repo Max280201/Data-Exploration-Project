@@ -19,6 +19,9 @@ Das Projekt wurde von Julius Koenning, Max Bernauer und Philipp Dingfelder erste
     (3) modelltraining_test_area_v4.ipynb: enthält alle relevanten getesteten Techniken für das Modell und 
     					   Alternativen
                                            (Hyperparametertuning, Ensemble-Learning, Poission-Prediction)
+					   Anmerkung: Random Search kann zu dem Fehler 
+					   Access denied führen, dies lässt
+sich durch eine geringere Anzahl an Wiederholungen beheben (https://github.com/keras-team/keras-tuner/issues/339)
     (4) translate_betting_odds.ipynb: Auswertung und Vorverarbeitung der Wettquoten
     (5) evaluate_model_odd_predictions_v2.ipynb: Vergleich des trainierten Modells mit Wettanbietern und Auswertung
 
@@ -34,7 +37,8 @@ Das Projekt wurde von Julius Koenning, Max Bernauer und Philipp Dingfelder erste
 		(1) Klonen des Github-Repository (Branch: main)
 		(2) Öffnen der CMD und navigieren in den Git-Hub-Ordner
 		(3) CMD-Command 'py -3.X -m venv Hoyzer' (Bash: 'python3.X -m venv HoyzerVenv') ausführen
-		    (erstellt die virtuell Environment, ersetzen von X durch die vorhandene Python-Version)
+		    (erstellt die virtuell Environment, ersetzen von X durch die vorhandene Python-Version,
+		    es wird empfohlen Python 3.9.2 oder höher zu verwenden)
 		(4) '"HoyzerVenv\Scripts\activate.bat"' in CMD ausführen (aktiviert die virtuell Environment)
 		(4) CMD-Command 'pip install -r requirements.txt' ausführen
 		(5) Auswählen der python version der venv als Kernel;
