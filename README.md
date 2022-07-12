@@ -6,6 +6,8 @@ Dieses Projekt wurde im Rahmen der Vorlesungseinheit "Data Exploration" entwicke
 
 Als Datenbasis dienen alle Fußballspiele ab der Saison 2007/2008 bis zur Saison 2021/2022. Die Daten werden erst aggregiert, ausgewertet und mit bestimmten Features (Form eines Team, Angriffs- und Verteidigungsstärke, Elo, direkter Vergleich) angereichert. Anschließend erfolgt ein Modelltraining und die Evaluation mithilfe von Quoten bestimmter Wettanbieter, die über die gesamten Zeitraum der Datenbasis vorliegen. Eine genaue Beschreibung der einzelnen Notebooks findet im Folgenden statt.
 
+Das Projekt wurde von Julius Koenning, Max Bernauer und Philipp Dingfelder erstellt.
+
 ## Erklärung der einzelenen Bestandteile:
 
 ```
