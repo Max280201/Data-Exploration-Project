@@ -1,11 +1,23 @@
-\chapter{Quellenverzeichnis}
+% !TEX root =  master.tex
+\chapter{Beschreibung des Quellcodes}
+\section{Ausführen des Programms}
+\begin{enumerate}
+	\item Klonen des Github-Repository unter dem Link https://github.com/Max280201/Data-Exploration-Project (Branch: main)
+	\item Öffnen der CMD und navigieren in den Git-Hub-Ordner
+	\item CMD-Command 'py -3.X -m venv Hoyzer' (Bash: 'python3.X -m venv HoyzerVenv') ausführen (erstellt die virtuell Environment, ersetzen von X durch die vorhandene Python-Version)
+	\item \grqq HoyzerVenv/Scripts/activate.bat\grqq in CMD ausführen (aktiviert die virtuell Environment)
+	\item CMD-Command \grqq pip install -r requirements.txt\grqq{} ausführen
+	\item Auswählen der python version der venv als Kernel; Ausführen der Python-Datei/ Notebooks anschließend möglich
+\end{enumerate}
 
-[1] \autocite[Vgl.][]{.06102018}
-
-[2] \autocite[Vgl.][]{.}
-
-[3] \autocite[Vgl.][]{Accso.14102021} 
-
-[4] \autocite[Vgl.][]{Doan.}
-
-[5] \autocite[Vgl.][]{Hartley.05102022}.
+\section{Erklärung der einzelnen Bestandteile}
+\begin{itemize}
+	\item preprocessing\_pipeline\_v1.ipynb: kombiniert die csv-Dateien der Saisonspiele und die Marktwerte; außerdem Datenvorverarbeitung und Berechnung weiterer Features
+	\item modelltraining\_prod\_v4.py: Modelltraining eines NN (sowohl eines, um die letzte Saison vohrerzusagen, als auch eines, um zufällige Spiele des Bereichs vorherzusagen) und kurze Evaluation des Modells
+	\item modelltraining\_test\_area\_v4.ipynb: enthält alle relevanten getesteten Techniken für das Modell und Alternativen (Hyperparametertuning, Ensemble-Learning, Poission-Prediction);
+	
+	Anmerkung: Random Search kann zu dem Fehler \grqq Access denied\grqq{} führen, dies lässt sich durch eine geringere Anzahl an zur Verfügung gestellten CPU's oder eine geringere Anzahl an Wiederholungen beheben
+	
+	\item translate\_betting\_odds.ipynb: Auswertung und Vorverarbeitung der Wettquoten
+	\item evaluate\_model\_odd\_predictions\_v2.ipynb: Vergleich des trainierten Modells mit Wettanbietern und Auswertung
+\end{itemize}
