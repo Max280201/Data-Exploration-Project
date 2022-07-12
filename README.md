@@ -35,8 +35,8 @@ Das Projekt wurde von Julius Koenning, Max Bernauer und Philipp Dingfelder erste
 
 	- Empfohlene Version:
 		(1) Klonen des Github-Repository (Branch: main)
-		(2) Öffnen der CMD und navigieren in den Git-Hub-Ordner
-		(3) CMD-Command 'py -3.X -m venv Hoyzer' (Bash: 'python3.X -m venv HoyzerVenv') ausführen
+		(2) Öffnen der CMD und navigieren in den Ordner Code des Git-Hub-Ordners
+		(3) CMD-Command 'py -3.X -m venv HoyzerVenv' (Bash: 'python3.X -m venv HoyzerVenv') ausführen
 		    (erstellt die virtuell Environment, ersetzen von X durch die vorhandene Python-Version,
 		    es wird empfohlen Python 3.9.2 oder höher zu verwenden)
 		(4) '"HoyzerVenv\Scripts\activate.bat"' in CMD ausführen (aktiviert die virtuell Environment)
