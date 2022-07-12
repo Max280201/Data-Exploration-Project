@@ -169,16 +169,16 @@
     \endentry
     \entry{.06102018}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a3c0b3dbf760c38e6660567b5bdd3ef7}{%
-           family={{Sepp Herberger}},
+        {{un=0,uniquepart=base,hash=f12476fb49710f3b6a540f154998042f}{%
+           family={{Stefan Galler}},
            familyi={S\bibinitperiod}}}%
       }
-      \strng{namehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
-      \strng{fullhash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
-      \strng{bibnamehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
-      \strng{authorbibnamehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
-      \strng{authornamehash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
-      \strng{authorfullhash}{a3c0b3dbf760c38e6660567b5bdd3ef7}
+      \strng{namehash}{f12476fb49710f3b6a540f154998042f}
+      \strng{fullhash}{f12476fb49710f3b6a540f154998042f}
+      \strng{bibnamehash}{f12476fb49710f3b6a540f154998042f}
+      \strng{authorbibnamehash}{f12476fb49710f3b6a540f154998042f}
+      \strng{authornamehash}{f12476fb49710f3b6a540f154998042f}
+      \strng{authorfullhash}{f12476fb49710f3b6a540f154998042f}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}

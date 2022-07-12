@@ -1,18 +1,18 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'master.blg'
-[127] biber-MSWIN64:340> INFO - === 
-[184] Biber.pm:415> INFO - Reading 'master.bcf'
-[325] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
-[344] Biber.pm:4340> INFO - Processing section 0
-[356] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[413] bibtex.pm:1689> INFO - LaTeX decoding ...
-[424] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
-[456] Utils.pm:395> WARN - legacy year field '09/12/2020' in entry 'Accso.14102021' is not an integer - this will probably not sort properly.
-[459] Utils.pm:395> WARN - legacy year field '15/05/2019' in entry 'Doan.' is not an integer - this will probably not sort properly.
-[478] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[478] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[478] Biber.pm:4168> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'de-DE'
-[478] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[489] bbl.pm:654> INFO - Writing 'master.bbl' with encoding 'UTF-8'
-[491] bbl.pm:757> INFO - Output to master.bbl
-[492] Biber.pm:128> INFO - WARNINGS: 2
+[614] biber-MSWIN64:340> INFO - === 
+[733] Biber.pm:415> INFO - Reading 'master.bcf'
+[878] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
+[899] Biber.pm:4340> INFO - Processing section 0
+[915] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[977] bibtex.pm:1689> INFO - LaTeX decoding ...
+[988] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[1050] Utils.pm:395> WARN - legacy year field '09/12/2020' in entry 'Accso.14102021' is not an integer - this will probably not sort properly.
+[1053] Utils.pm:395> WARN - legacy year field '15/05/2019' in entry 'Doan.' is not an integer - this will probably not sort properly.
+[1072] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1072] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1072] Biber.pm:4168> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'de-DE'
+[1073] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[1143] bbl.pm:654> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[1146] bbl.pm:757> INFO - Output to master.bbl
+[1146] Biber.pm:128> INFO - WARNINGS: 2
