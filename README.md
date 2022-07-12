@@ -20,8 +20,8 @@ Das Projekt wurde von Julius Koenning, Max Bernauer und Philipp Dingfelder erste
     					   Alternativen
                                            (Hyperparametertuning, Ensemble-Learning, Poission-Prediction)
 					   Anmerkung: Random Search kann zu dem Fehler 
-					   Access denied führen, dies lässt
-sich durch eine geringere Anzahl an Wiederholungen beheben (https://github.com/keras-team/keras-tuner/issues/339)
+					   Access denied führen, dies lässt sich durch eine geringere Anzahl an
+					   Wiederholungen beheben (https://github.com/keras-team/keras-tuner/issues/339)
     (4) translate_betting_odds.ipynb: Auswertung und Vorverarbeitung der Wettquoten
     (5) evaluate_model_odd_predictions_v2.ipynb: Vergleich des trainierten Modells mit Wettanbietern und Auswertung
 
