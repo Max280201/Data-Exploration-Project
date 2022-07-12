@@ -45,4 +45,4 @@ Das Projekt wurde von Julius Koenning, Max Bernauer und Philipp Dingfelder erste
 		    Ausführen der Python-Datei/ Notebooks anschließend möglich
 ```
 
-Diese Projekt dient ausschließlich dem wissenschaftlichen Kontext und stellt keine Wettberatung da!
+Dieses Projekt dient ausschließlich dem wissenschaftlichen Kontext und stellt keine Wettberatung da!
